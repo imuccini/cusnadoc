@@ -1,0 +1,436 @@
+---
+openapi: 3.0.1
+info:
+  title: Cusna APIs
+  description: Resident management APIs
+  version: "1.0"
+servers:
+- url: https://www.cusna.io/api/1.1
+security:
+- bearerAuth: []
+paths:
+  /wf/auth:
+    post:
+      tags:
+      - Authentication
+      description: Get Token
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/wf_auth_body'
+            examples:
+              "0":
+                value: |-
+                  {
+                      "email":"emailaddress",
+                      "password":"password"
+                  }
+      responses:
+        "200":
+          description: Get Token
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+              examples:
+                "0":
+                  value: |-
+                    {
+                        "status": "success",
+                        "response": {
+                            "token": "1654618732137x551553604128404800",
+                            "user_id": "1653502412695x910867020641148200",
+                            "expires": 31536000
+                        }
+                    }
+      security: []
+  /obj/resident:
+    get:
+      tags:
+      - Residents management
+      description: List all Resident in the Organization
+      responses:
+        "200":
+          description: List all Resident in the Organization
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_1'
+              examples:
+                "0":
+                  value: |-
+                    {
+                        "response": {
+                            "cursor": 0,
+                            "results": [
+                                {
+                                    "Modified Date": "2022-06-09T03:27:02.929Z",
+                                    "Created Date": "2022-06-09T02:12:11.904Z",
+                                    "Created By": "1654117194722x920684661190674000",
+                                    "account": "1654740733756x271022408151065920",
+                                    "building": "T2",
+                                    "email": "cusnaresident@gmail.com",
+                                    "externalID": "1234456",
+                                    "firstName": "Happy",
+                                    "lastName": "Resident",
+                                    "organization": "1654740730258x343197985783152640",
+                                    "passphrase": "mypersonalpassphrase",
+                                    "phone": "4156234444",
+                                    "qrCode": "//s3.amazonaws.com/appforest_uf/f1654740734295x563722479118820900/create-qr-code",
+                                    "startDate": "2022-06-09T02:12:11.858Z",
+                                    "stopDate": "2023-06-09T02:12:11.858Z",
+                                    "tenantServiceStatus": "Active",
+                                    "terminationMode": "Schedule stop date",
+                                    "terminationPID": "3",
+                                    "unit": "1112",
+                                    "_id": "1654740731860x896778368875644200"
+                                }
+                            ],
+                            "remaining": 0,
+                            "count": 1
+                        }
+                    }
+    post:
+      tags:
+      - Residents management
+      description: Auto generated using Swagger Inspector
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/obj_resident_body'
+            examples:
+              "0":
+                value: |-
+                  {
+                      "building": "T2",
+                      "email": "cusnaresident3@gmail.com",
+                      "externalID": "1234456",
+                      "firstName": "Happy",
+                      "lastName": "Resident",
+                      "passphrase": "mypersonalpassphrase3",
+                      "phone": "4156234444",
+                      "stopDate": "2023-06-09T02:12:11.858Z",
+                      "tenantServiceStatus": "Active",
+                      "terminationMode": "Schedule stop date",
+                      "unit": "1112"
+                  }
+              "1":
+                value: |-
+                  {
+                      "organization":"1654740730258x343197985783152640",
+                      "building": "T2",
+                      "email": "cusnaresident3@gmail.com",
+                      "externalID": "1234456",
+                      "firstName": "Happy",
+                      "lastName": "Resident",
+                      "passphrase": "mypersonalpassphras43",
+                      "phone": "4156234444",
+                      "stopDate": "2023-06-09T02:12:11.858Z",
+                      "tenantServiceStatus": "Active",
+                      "terminationMode": "Schedule stop date",
+                      "unit": "1112"
+                  }
+      responses:
+        "201":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_201'
+              examples:
+                "0":
+                  value: |-
+                    {
+                        "status": "success",
+                        "id": "1654749146818x949167587577863300"
+                    }
+  /obj/resident/{id}:
+    delete:
+      tags:
+      - Residents management
+      summary: delete resident by ID
+      description: Delete resident by ID
+      parameters:
+      - name: id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: 1654740731860x896778368875644200
+      responses:
+        "200":
+          description: OK
+    patch:
+      tags:
+      - Residents management
+      description: Edit Resident
+      parameters:
+      - name: id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: 1654740731860x896778368875644200
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/resident_id_body'
+            examples:
+              "0":
+                value: |-
+                  {
+                      "building": "T2",
+                      "email": "cusnaresident3@gmail.com",
+                      "externalID": "1234456",
+                      "firstName": "Happy",
+                      "lastName": "Resident",
+                      "passphrase": "mypersonalpassphrase4",
+                      "phone": "4156234444",
+                      "stopDate": "2023-06-09T02:12:11.858Z",
+                      "tenantServiceStatus": "Active",
+                      "terminationMode": "Schedule stop date",
+                      "unit": "1112"
+                  }
+      responses:
+        "405":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_405'
+              examples:
+                "0":
+                  value: '{"statusCode":405,"body":{"status":"ERROR","message":"Unrecognized method.  Currently supported: get,post"}}'
+  /wf/sendactivationemail:
+    post:
+      tags:
+      - Residents management
+      description: Send activaitn email to resident
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/wf_sendactivationemail_body'
+            examples:
+              "0":
+                value: |-
+                  {
+                      "user":"1654058988310x459285687337671600"
+                  }
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+              examples:
+                "0":
+                  value: |-
+                    {
+                        "status": "success",
+                        "response": {}
+                    }
+      servers:
+      - url: https://www.cusna.io
+    servers:
+    - url: https://www.cusna.io
+components:
+  schemas:
+    obj_resident_body:
+      type: object
+      properties:
+        tenantServiceStatus:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        terminationMode:
+          type: string
+        unit:
+          type: string
+        phone:
+          type: string
+        organization:
+          type: string
+        externalID:
+          type: string
+        passphrase:
+          type: string
+        building:
+          type: string
+        email:
+          type: string
+        stopDate:
+          type: string
+    inline_response_405:
+      type: object
+      properties:
+        body:
+          $ref: '#/components/schemas/inline_response_405_body'
+        statusCode:
+          type: integer
+    inline_response_200_1_response_results:
+      type: object
+      properties:
+        tenantServiceStatus:
+          type: string
+        lastName:
+          type: string
+        terminationMode:
+          type: string
+        Modified Date:
+          type: string
+        Created Date:
+          type: string
+        externalID:
+          type: string
+        building:
+          type: string
+        firstName:
+          type: string
+        unit:
+          type: string
+        terminationPID:
+          type: string
+          description: List all Resident in the Organization
+        qrCode:
+          type: string
+        phone:
+          type: string
+        organization:
+          type: string
+        passphrase:
+          type: string
+        Created By:
+          type: string
+        _id:
+          type: string
+        account:
+          type: string
+        email:
+          type: string
+        startDate:
+          type: string
+        stopDate:
+          type: string
+      example: null
+    inline_response_405_body:
+      type: object
+      properties:
+        message:
+          type: string
+        status:
+          type: string
+      example: null
+    wf_sendactivationemail_body:
+      type: object
+      properties:
+        user:
+          type: string
+    wf_auth_body:
+      type: object
+      properties:
+        password:
+          type: string
+        email:
+          type: string
+    resident_id_body:
+      type: object
+      properties:
+        tenantServiceStatus:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        terminationMode:
+          type: string
+        unit:
+          type: string
+        phone:
+          type: string
+        externalID:
+          type: string
+        passphrase:
+          type: string
+        building:
+          type: string
+        email:
+          type: string
+        stopDate:
+          type: string
+    inline_response_200_1:
+      type: object
+      properties:
+        response:
+          $ref: '#/components/schemas/inline_response_200_1_response'
+    inline_response_201:
+      type: object
+      properties:
+        id:
+          type: string
+        status:
+          type: string
+    inline_response_200:
+      type: object
+      properties:
+        response:
+          $ref: '#/components/schemas/inline_response_200_response'
+        status:
+          type: string
+    inline_response_200_2:
+      type: object
+      properties:
+        response:
+          type: object
+          properties: {}
+        status:
+          type: string
+    inline_response_200_1_response:
+      type: object
+      properties:
+        cursor:
+          type: integer
+        count:
+          type: integer
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/inline_response_200_1_response_results'
+        remaining:
+          type: integer
+      example: null
+    inline_response_200_response:
+      type: object
+      properties:
+        expires:
+          type: integer
+        user_id:
+          type: string
+        token:
+          type: string
+      example: null
+  parameters:
+    residentId:
+      name: id
+      in: path
+      description: id of the Resident
+      required: true
+      style: simple
+      explode: false
+      schema:
+        type: string
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

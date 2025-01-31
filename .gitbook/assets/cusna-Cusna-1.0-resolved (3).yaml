@@ -1,0 +1,71 @@
+---
+openapi: 3.0.1
+info:
+  title: Cusna APIs
+  description: Resident management APIs
+  version: "1.0"
+servers:
+- url: https://www.cusna.io/api/1.1/wf
+paths:
+  /auth:
+    post:
+      tags:
+      - Authentication
+      description: Get Token
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/auth_body'
+            examples:
+              "0":
+                value: |-
+                  {
+                      "email":"emailaddress",
+                      "password":"password"
+                  }
+      responses:
+        "200":
+          description: Get Token
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+              examples:
+                "0":
+                  value: |-
+                    {
+                        "status": "success",
+                        "response": {
+                            "token": "1654618732137x551553604128404800",
+                            "user_id": "1653502412695x910867020641148200",
+                            "expires": 31536000
+                        }
+                    }
+      servers:
+      - url: https://www.cusna.io/api/1.1/wf
+    servers:
+    - url: https://www.cusna.io/api/1.1/wf
+components:
+  schemas:
+    auth_body:
+      type: object
+      properties:
+        password:
+          type: string
+        email:
+          type: string
+    inline_response_200:
+      type: object
+      properties:
+        response:
+          type: object
+          properties:
+            expires:
+              type: integer
+            user_id:
+              type: string
+            token:
+              type: string
+        status:
+          type: string
