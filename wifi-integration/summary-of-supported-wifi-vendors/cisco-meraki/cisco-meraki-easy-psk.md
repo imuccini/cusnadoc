@@ -12,13 +12,12 @@ Traditional RADIUS-based iPSK relies on MAC authentication, requiring each devic
 
 Key Advantages of This Approach:
 
-*
-  * **Scalability:** Supports deployments larger than 5,000 users, overcoming the limit of Meraki iPSK without RADIUS, which supports up to 5,000 iPSKs per network.
-  * **Seamless Roaming:** Enables users to roam across any network deployed within the project without reauthentication issues.
-  * **Selective PAN Enforcement:** In multi-network deployments, Cusna can enforce Personal Area Network (PAN) segmentation on specific networks, such as a user’s home network. For example, in a large campus with multiple networks, a user can connect with their iPSK anywhere, but PAN enforcement applies only when connected to their dormitory network.
-  * **Advanced Connection Logs and Reports:** Provides detailed RADIUS authentication and accounting logs for improved visibility and auditing.
-  * **Wired Device Support:** Allows devices connected via switch ports to be authorized using MAC authentication. Since PAN cannot be implemented via WPN (which is incompatible with switches), Cusna can be configured to use VLANs for PAN deployment.
-  * **Granular Network Policies:** Enforces advanced policies through RADIUS AAA, beyond dynamic group policies. This includes the ability to limit the maximum number of devices per user and restrict the number of concurrent device connections per user.
+* **Scalability:** Supports deployments larger than 5,000 users, overcoming the limit of Meraki iPSK without RADIUS, which supports up to 5,000 iPSKs per network.
+* **Seamless Roaming:** Enables users to roam across any network deployed within the project without reauthentication issues.
+* **Selective PAN Enforcement:** In multi-network deployments, Cusna can enforce Personal Area Network (PAN) segmentation on specific networks, such as a user’s home network. For example, in a large campus with multiple networks, a user can connect with their iPSK anywhere, but PAN enforcement applies only when connected to their dormitory network.
+* **Advanced Connection Logs and Reports:** Provides detailed RADIUS authentication and accounting logs for improved visibility and auditing.
+* **Wired Device Support:** Allows devices connected via switch ports to be authorized using MAC authentication. Since PAN cannot be implemented via WPN (which is incompatible with switches), Cusna can be configured to use VLANs for PAN deployment.
+* **Granular Network Policies:** Enforces advanced policies through RADIUS AAA, beyond dynamic group policies. This includes the ability to limit the maximum number of devices per user and restrict the number of concurrent device  per user.
 
 
 
