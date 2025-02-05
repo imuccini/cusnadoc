@@ -26,6 +26,7 @@
   * [Network Managers](service-management/managing-networks/network-managers.md)
 * [Units](service-management/units.md)
 * [General options](service-management/general-options/README.md)
+  * [Personal Area Networks (PAN)](service-management/general-options/personal-area-networks-pan.md)
   * [Service Options](service-management/general-options/service-options.md)
   * [Organization details](service-management/general-options/organization-details.md)
 * [Network Policies](service-management/network-policies.md)
