@@ -30,7 +30,7 @@ Each **Location** in Cusna is associated to a **Network** in the Meraki dashboar
 3. On the desired SSID, click "**edit settings**" link to navigate to the **Access Control** page for this SSID.
 4. On the Access control Page, Select **Identity PSK with RADIUS** under **Security** and in the dropdown select **Easy PSK**\
    \
-   ![](../../../.gitbook/assets/image.png)\
+   ![](<../../../.gitbook/assets/image (2).png>)\
 
 5. Set **Wi-Fi Personal Network (WPN)** to **Enabled**
 6. Click **Save changes** on the bottom of the page.
@@ -81,6 +81,45 @@ Once the key is generated from the Cisco Meraki dashboard:
 * The Organization menu will load the list of Meraki Organizations enabled on your API Kay; select the Organization that you want to link to your Cusna account.&#x20;
 * Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Next, you need to setup at least one **Network Policy**.  Once you have set up the Meraki integration, the **Network Policy** section appears.
+
+{% content-ref url="../../../service-management/network-policies.md" %}
+[network-policies.md](../../../service-management/network-policies.md)
+{% endcontent-ref %}
+
+
+
+## Scenarios: multi-network deployments
+
+Imagine a large campus divided into multiple **Meraki Networks** for easier management, with separate networks for areas such as dormitories, public spaces, parks, and faculty buildings.
+
+In the dormitories, each room has its own access point (AP) along with Ethernet outlets connected to floor-level switches. In this scenario, the best technology for managing **Personal Area Networks (PANs)** is VLANs, since switches do not support WPN.
+
+* **Wireless Devices:** Students connect their wireless devices using **PPSK (Easy PSK)**, allowing seamless connectivity across all campus networks.
+* **Wired Devices:** Devices connected via the Ethernet outlet in a student’s room are authenticated using **MAC authentication**, and require an onboarding process.
+
+When a student connects devices (wired or wireless) from the **dorm network**, the RADIUS server assigns a unique VLAN to ensure all of that student’s devices are on the same network, creating an isolated PAN.
+
+However, when the student connects their wireless devices to other networks on campus (outside the dorms), the devices are still authorized but without any specific VLAN enforcement. Instead, they inherit the VLAN defined by their **Group Policy** or the default VLAN assigned to the SSID.
+
+
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### Wired Devices Onboarding
+
+Wired devices can be onboarded in two different ways.
+
+Headless devices must be manually provisioned by the user on their [WiFi portal](../../../service-management/wifi-portal-and-onboarding/iot-devices-authentication.md), adding their MAC address and reference friendly name.
+
+Non-headless devices, once connected to the ETH port, can be blocked and prompted to a captive portal to enroll the device.
+
+1. The user enters his email address
+2. Form another device, open the email and click the link
+3. Give a name to the device and approve it.
+4. Disconnect and reconnect the cable device to the ETH port
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
