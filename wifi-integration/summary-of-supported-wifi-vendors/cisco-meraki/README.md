@@ -74,19 +74,81 @@ To connect Cusna to your Meraki account, you need to generate an API Key in your
 Once the key is generated from the Cisco Meraki dashboard:
 
 * Log in to your Cusna account and click **Setting**.&#x20;
-* Expand the **WiFi setup** card, select **Meraki**&#x20;
-* Enable the toggle **Easy PSK via RADIUS**
-* Enter your **API Key.**&#x20;
+* Expand the **WiFi setup** card, select **Meraki** and enter your **API Key.**&#x20;
 * The Organization menu will load the list of Meraki Organizations enabled on your API Kay; select the Organization that you want to link to your Cusna account.&#x20;
 * Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
 
 Next, you need to setup at least one **Network Policy**.  Once you have set up the Meraki integration, the **Network Policy** section appears.
 
 {% content-ref url="../../../service-management/network-policies.md" %}
 [network-policies.md](../../../service-management/network-policies.md)
 {% endcontent-ref %}
+
+
+
+{% hint style="info" %}
+When using Meraki, Cusna does not allwo to manually or automatically set the VLAN on the individual tenant, since the VLAN is handled by the assigned Group Policy.
+{% endhint %}
+
+
+
+## Operating Cusna
+
+### Creating Networks
+
+When you create or edit a Property in the Cusna dashboard, in the WiFi configuration section, you have to pick the **Network** and **SSID** related to the Network and the Network Policy you want to assign by default to the new tenant accounts (you can select a custom Network Policy while creating a new Tenant)
+
+
+
+![](<../../../.gitbook/assets/image (148).png>)
+
+Note: when selecting the SSID, Cusna verifies in real-time if the SSID is properly configured with work with iPSK without RADIUS and the other settings required by Cusna. If not compliant, you'll see a notification message. You can still select the SSID and save the Network and fix the SSID configuration later or.
+
+<div align="left"><figure><img src="../../../.gitbook/assets/image (102).png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+### Managing Units
+
+Meraki support Cusna Units management, where each unit can be associated with a Wired access point. Cusna configure the ETH ports to be in the same personal area network as the device connecting with the iPSK of the Account associated to the Unit.
+
+{% hint style="info" %}
+This feature is currently supported only on MR36H
+{% endhint %}
+
+{% content-ref url="../../../service-management/units.md" %}
+[units.md](../../../service-management/units.md)
+{% endcontent-ref %}
+
+
+
+### Creating Accounts
+
+When you create a new Account, a new iPSK user will be created in your Meraki account with a predefined WiFi Passphrase.&#x20;
+
+In the Account setup page, you need to chose a **Network Policy** to assign to the user in the related menu. Select "**Default**" to assign the Network Policy that has been selected as the default one for the Network where you are activating the Account
+
+![](<../../../.gitbook/assets/image (147).png>)
+
+The Account of type Tenant and Visitors receive an activation email with the default passphrase and QR code, and a link to the Tenant Portal where can change the passphrase.
+
+{% hint style="danger" %}
+To avoid synchronization problems, please do not manage manually the iPSKs in the Meraki dashboard.
+{% endhint %}
+
+
+
+
+
+## Meraki WPN Limitations
+
+* 5,000 iPSK groups per SSID and 2x SSIDs with WPN enabled per dashboard network are supported.
+* Wireless devices connected to a WPN-enabled SSID _cannot_ communicate with wired devices on the _same_ VLAN (L2 domain) except for the default gateway.&#x20;
+* Wireless devices connected to a WPN-enabled SSID _can_ communicate with wired devices on a _different_ VLAN through L3 routing.
+* **Meraki AP assigned (NAT mode)** is not supported on an SSID with WPN enabled. **External DHCP server assigned** mode must be used instead.
+* Wired AP ports using [port profiles](https://documentation.meraki.com/MR/Client_Addressing_and_Bridging/Port_Profiles) do not support WPN.
+
+
 
 
 
