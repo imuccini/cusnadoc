@@ -5,10 +5,11 @@
 ## WiFi Integration
 
 * [Summary of supported WiFi vendors](wifi-integration/summary-of-supported-wifi-vendors/README.md)
+  * [Cisco Meraki](wifi-integration/summary-of-supported-wifi-vendors/cisco-meraki/README.md)
+    * [Cisco Meraki Easy PSK](wifi-integration/summary-of-supported-wifi-vendors/cisco-meraki/cisco-meraki-easy-psk.md)
   * [Cambium cnMaestro](wifi-integration/summary-of-supported-wifi-vendors/cambium-cnmaestro.md)
   * [Extreme Networks](wifi-integration/summary-of-supported-wifi-vendors/extreme-networks.md)
   * [Juniper (Mist)](wifi-integration/summary-of-supported-wifi-vendors/juniper-mist.md)
-  * [Cisco Meraki](wifi-integration/summary-of-supported-wifi-vendors/cisco-meraki.md)
   * [TP-Link Omada](wifi-integration/summary-of-supported-wifi-vendors/tp-link-omada.md)
   * [Ruckus SmartZone](wifi-integration/summary-of-supported-wifi-vendors/ruckus-smartzone.md)
   * [Fortinet (FortiGate Secure Wireless Controller)](wifi-integration/summary-of-supported-wifi-vendors/fortinet-fortigate-secure-wireless-controller.md)

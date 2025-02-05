@@ -38,7 +38,7 @@ Other notes
 
 Other notes:
 
-* At this time, Meraki iPSK without WPN is limited to only 50 PSK. So, for most cases, enabling WPN is required. Make sure to read about the limitations and implication of using WPN (see [Meraki WPN Limitations](cisco-meraki.md#meraki-wpn-limitations))
+* At this time, Meraki iPSK without WPN is limited to only 50 PSK. So, for most cases, enabling WPN is required. Make sure to read about the limitations and implication of using WPN (see [Meraki WPN Limitations](cisco-meraki/#meraki-wpn-limitations))
 * For each Account, you have to assign a Network Policy (which include VLAN), however it is not practical to have a Network Policy for each individual. Network Policies are meant to be used to to differentiate QoS and VLANs of Groups. All individual Account most commonlty are assigned with the same Network Policy
 
 
