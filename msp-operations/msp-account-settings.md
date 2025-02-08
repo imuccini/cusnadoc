@@ -11,10 +11,10 @@ In this page, you can change:
 * **MSP Name**
 * **MSP Admin Owner**: you can select another MSP Admins (see Admins) to become Owner of this MSP account. if you change owner, you transfer the ownership and you'll lose access to this page immediately
 * **Allowed vendors**: this setting limits the list of available WiFi vendors for the managed Organizations &#x20;
-* Default Terms of Use
-* Default Privacy Policy
+* Default **Terms of Use**: all new Organizations will be initialized with this Terms of Use link
+* Default **Privacy Policy**: **Use**: all new Organizations will be initialized with this Privacy Policy link
 * **Logo**: all new Organizations will be initialized with this logo, but the Organization Admin can change it later
-* **Accent color**:  all new Organizations will be initialized with this accent color, but the Organization Admin can change it later
+* **Accent color**:  all new Organizations will be initialized with this accent color
 
 
 
@@ -99,7 +99,36 @@ You need these values to setup the SAML authentication into your IdP service.
 
 </details>
 
+<details>
 
+<summary>Google</summary>
+
+1.  Within your Google Workspace admin home page, click **Apps**.
+
+    [![](https://support.purple.ai/hc/article_attachments/7330686191133)](https://support.purple.ai/hc/article_attachments/7330686191133)
+2.  Click **Web and mobile apps**.
+
+    [![](https://support.purple.ai/hc/article_attachments/7330715109149)](https://support.purple.ai/hc/article_attachments/7330715109149)
+3.  Click **Add App** > **Add custom SAML app**.
+
+    [![](https://support.purple.ai/hc/article_attachments/7330715136797)](https://support.purple.ai/hc/article_attachments/7330715136797)
+4. Add an app name and icon (this displays to users when they sign in to WiFi via the Google Workspace login).
+5. On the following page there is an **SSO URL**, **Entity** and Certificate. Make a note of these details as you need this information to enter into the Cusna portal. You can return to these details at any time.
+6.  Complete the Service provider details as follows:
+
+    | ACS URL        | Enter the **Reply Url** value shown in the Cusna dashboard  |
+    | -------------- | ----------------------------------------------------------- |
+    | ACS entity     | Enter the **Entity ID** value shown in the Cusna dashboard. |
+    | Name ID format | EMAIL                                                       |
+    | Name ID        | Basic Information > Primary email                           |
+7. Click **Continue** and add any additional fields you want to pass to the portal. Common fields include First name, Last name or Phone number, which should be passed as firstName, lastName and phoneNumber respectively. Common portal fields include:
+   * title
+   * firstName
+   * lastName
+   * phoneNumber
+8. To complete the set up, click **Finish**.
+
+</details>
 
 In the **List of SAML Groups**, you can enter the list of group ids that you want to authorize for authenticating in the Cusna account. If you leave this option empty, all users will be authorized to signup.
 
