@@ -20,9 +20,11 @@ In this page, you can change:
 
 ## Single Sign On (SSO)
 
-If your MSP is enabled, in this page you can find a card named SSO where you can setup and manage the ability for your corporate users to login into the Cusna MSP account using the corporate account
+If your MSP is enabled, in this page you can find a card named SSO where you can setup and manage the ability for your corporate users to login into the Cusna MSP account using the corporate account.
 
-
+{% hint style="info" %}
+Only the MSP Admin with [**Owner**](https://www.cusna.io/app?page=alladmins\&tab=list) role can access this option. Go to the Admins page to check who is the Owner of your MSP account.
+{% endhint %}
 
 ### Initial Setup
 
