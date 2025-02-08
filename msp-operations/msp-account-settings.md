@@ -88,8 +88,7 @@ You need these values to setup the SAML authentication into your IdP service.
 
     <figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
-    In Cusna, click **Setup**.\
-
+    In Cusna, click **Setup**.
 
 *   Ensure all users can sign on without the need to set up separate permissions in Entra ID. \
     Form the main page of the application,  go to the **Properties** page and select **No** for **Assignment required** and **Yes** to **Visible to users**.\
@@ -127,6 +126,10 @@ You need these values to setup the SAML authentication into your IdP service.
    In the **Group membership** card, select the Groups that you want to pass during the authentication; you can configure the groups names in the Cunsa porta to filter only the groups that you want to allow.\
 
 8. To complete the set up, click **Finish**.
+
+Form the main screen, click **View Details** form the **User Access** card.\
+![](<../.gitbook/assets/image (358).png>)\
+Make sure to set the **Service Status** to **On for everyone**. In alternative, you can set selective permissions to specific Groups or Organizational Units.
 
 </details>
 
