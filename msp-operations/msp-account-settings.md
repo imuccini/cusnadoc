@@ -130,9 +130,9 @@ You need these values to setup the SAML authentication into your IdP service.
 
 </details>
 
-In the **List of SAML Groups**, you can enter the list of group ids/names (depending on the IdP) that you want to authorize for authenticating in the Cusna account. If you leave this option empty, all users will be authorized to signup.
+In the **List of SAML Groups**, you can enter the list of group ids/names (depending on the IdP) that you want to authorize for authenticating in the Cusna account. If you leave this option empty, all users will be authorized to signup. This filtering option is checked at every user login, so you can chance at any time.
 
-Finally, in the **Default Permissions** dropdown you can select the additional permissions you want to assign by default to users signing up via SAML.
+Finally, in the **Default Permissions** dropdown you can select the additional permissions you want to assign by default to users signing up via SAML. If you change this configuration later on, it will be reflected on the users on their next login.&#x20;
 
 Click **Setup** to save the settings.
 
