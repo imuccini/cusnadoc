@@ -113,24 +113,24 @@ You need these values to setup the SAML authentication into your IdP service.
 
     [![](https://support.purple.ai/hc/article_attachments/7330715136797)](https://support.purple.ai/hc/article_attachments/7330715136797)
 4. Add an app name and icon (this displays to users when they sign in to WiFi via the Google Workspace login).
-5. On the following page there is an **SSO URL**, **Entity** and Certificate. Make a note of these details as you need this information to enter into the Cusna portal. You can return to these details at any time.
-6.  Complete the Service provider details as follows:
+5. On the following page click **Download Metadata** to download the metadata XML file, as you need this information to enter into the Cusna portal. You can return to these details at any time.\
+   \
+   ![](../.gitbook/assets/image.png)
+6.  In the following page, complete the Service provider details as follows:
 
     | ACS URL        | Enter the **Reply Url** value shown in the Cusna dashboard  |
     | -------------- | ----------------------------------------------------------- |
     | ACS entity     | Enter the **Entity ID** value shown in the Cusna dashboard. |
     | Name ID format | EMAIL                                                       |
     | Name ID        | Basic Information > Primary email                           |
-7. Click **Continue** and add any additional fields you want to pass to the portal. Common fields include First name, Last name or Phone number, which should be passed as firstName, lastName and phoneNumber respectively. Common portal fields include:
-   * title
-   * firstName
-   * lastName
-   * phoneNumber
+7. Click **Continue** and and in the following page add any additional fields you want to pass to the portal. Common fields include First name and Last name, which should be passed as _firstName_, _lastName_ respectively.\
+   In the **Group membership** card, select the Groups that you want to pass during the authentication; you can configure the groups names in the Cunsa porta to filter only the groups that you want to allow.\
+
 8. To complete the set up, click **Finish**.
 
 </details>
 
-In the **List of SAML Groups**, you can enter the list of group ids that you want to authorize for authenticating in the Cusna account. If you leave this option empty, all users will be authorized to signup.
+In the **List of SAML Groups**, you can enter the list of group ids/names (depending on the IdP) that you want to authorize for authenticating in the Cusna account. If you leave this option empty, all users will be authorized to signup.
 
 Finally, in the **Default Permissions** dropdown you can select the additional permissions you want to assign by default to users signing up via SAML.
 
