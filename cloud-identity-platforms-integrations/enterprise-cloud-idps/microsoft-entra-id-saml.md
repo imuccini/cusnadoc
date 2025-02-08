@@ -32,7 +32,7 @@ At this point you'll see two variables getting populated: Reply URL and Entity I
 ### Step 2: Setup Azure
 
 {% hint style="info" %}
-Keep your Cusna portal open. **DO NOT CLOSE** the Cusna page.
+Keep your Cusna portal open. **DO NOT CLOSE** the Cusna page while setting up the application in Azure console.
 {% endhint %}
 
 1. Log in to Microsoft Azure in a new browser tab, click **Enterprise applications** > **New application**.
