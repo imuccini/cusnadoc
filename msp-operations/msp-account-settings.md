@@ -39,11 +39,13 @@ You need these values to setup the SAML authentication into your IdP service.
 
 In the **Metadata URI** you need to enter the value provided by your IdP service.
 
-Finally, in the **List of SAML Groups**, you can enter the list of group ids that you want to authorize for authenticating in the Cusna account. If you leave this option empty, all users will be authorized to signup.
+In the **List of SAML Groups**, you can enter the list of group ids that you want to authorize for authenticating in the Cusna account. If you leave this option empty, all users will be authorized to signup.
+
+Finally, in the **Default Permissions** dropdown you can select the additional permissions you want to assign by default to users signing up via SAML.
 
 Click **Setup** to save the settings.
 
-<figure><img src="../.gitbook/assets/image (355).png" alt=""><figcaption><p>Example of final setup scree</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/setupsso.gif" alt=""><figcaption></figcaption></figure>
 
 Make sure to **enable the SSO** by selecting the toggle on the SSO box once you have finalized the setup.
 
