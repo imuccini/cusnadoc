@@ -43,7 +43,7 @@ Finally, in the **List of SAML Groups**, you can enter the list of group ids tha
 
 Click **Setup** to save the settings.
 
-<figure><img src="../.gitbook/assets/image (354).png" alt=""><figcaption><p>Example of a final setup result</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (355).png" alt=""><figcaption><p>Example of final setup scree</p></figcaption></figure>
 
 Make sure to **enable the SSO** by selecting the toggle on the SSO box once you have finalized the setup.
 
