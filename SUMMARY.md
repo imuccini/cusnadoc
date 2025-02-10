@@ -17,6 +17,7 @@
 * [Coming soon...](wifi-integration/coming-soon.../README.md)
   * [Engenius Cloud](wifi-integration/coming-soon.../engenius-cloud.md)
   * [Zyxel Nebula (Pro)](wifi-integration/coming-soon.../zyxel-nebula-pro.md)
+  * [Aruba - Unbound MPSK](wifi-integration/coming-soon.../aruba-unbound-mpsk.md)
 
 ## Service management
 

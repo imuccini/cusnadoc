@@ -11,6 +11,6 @@ All activities and events related to Accounts can also be viewed directly on the
 
 <figure><img src="../../.gitbook/assets/image (344).png" alt=""><figcaption></figcaption></figure>
 
-The main dashboard also provides an overview of the most recent Activities in a dedicate Widget. Clicking the red arrow <img src="../../.gitbook/assets/image (5).png" alt="" data-size="line">, brings the user in the main Activity Logs page.&#x20;
+The main dashboard also provides an overview of the most recent Activities in a dedicate Widget. Clicking the red arrow <img src="../../.gitbook/assets/image (5) (1).png" alt="" data-size="line">, brings the user in the main Activity Logs page.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (345).png" alt="" width="244"><figcaption></figcaption></figure>

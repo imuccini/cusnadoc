@@ -29,9 +29,9 @@ Cusna offers also additional utilities to help during troubleshooting.
 
 On the **Integration** page, within the **WiFi Network** card, you can click the **Check** button for each configured integration to verify if the connection with the network management system is functioning correctly.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
-In case an error is detected, an alert icon <img src="../../.gitbook/assets/image (8).png" alt="" data-size="line"> appears to notify an issue. You also get a permanent error notification in the main sidebar reporting that the integration is not working properly.
+In case an error is detected, an alert icon <img src="../../.gitbook/assets/image (8) (1).png" alt="" data-size="line"> appears to notify an issue. You also get a permanent error notification in the main sidebar reporting that the integration is not working properly.
 
 {% hint style="info" %}
 Note that this check is performed automatically each time you open the dashboard, but no more than once every 5 minutes.
@@ -39,13 +39,13 @@ Note that this check is performed automatically each time you open the dashboard
 
 When such a problem occurs, an anomaly is reported, and you will receive an email notification if this option is enabled in your [Profile](../my-profile.md).
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Accounts
 
 In case you experience an issue with a specific Account, you can search the account and open its detail page. A button Status Check is available for more WiFi vendors. Once click, the system performs multiple checks and its result is presented in a card just below the header section.
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If everything is functioning correctly, you will receive a positive confirmation. This indicates that the account is properly provisioned in the network and within Cusna. Conversely, if the account is inactive in Cusna, it will be correctly de-provisioned from the network.
@@ -55,7 +55,7 @@ If any issues persist with this account, we recommend investigating the network 
 
 In the event of errors, the detected anomalies are reported on this card and in the main Anomalies list. If the system determines that the anomalies no longer occur, they are automatically marked as resolved and removed from the list.
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

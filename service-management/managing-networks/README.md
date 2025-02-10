@@ -41,7 +41,7 @@ The settings of this section are specific to each vendor.
 
 For vendors that support VLANs as a method to creating Personal Area Network, this section offers the ability to define the VLAN pool form where the VLANs are selected.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 
 
@@ -53,7 +53,7 @@ In this section you have the option to personalize the branding of the WiFi Port
 * **Intro message**: message that appears right below the header in the portal.
 * **Help text**: text that appears on the bottom of the WiFi Portal page. Can be used to inform residents on how to get help
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Editing a Network
 

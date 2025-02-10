@@ -114,7 +114,7 @@ You need these values to setup the SAML authentication into your IdP service.
 4. Add an app name and icon (this displays to users when they sign in to WiFi via the Google Workspace login).
 5. On the following page click **Download Metadata** to download the metadata XML file, as you need this information to enter into the Cusna portal. You can return to these details at any time.\
    \
-   ![](../.gitbook/assets/image.png)
+   ![](<../.gitbook/assets/image (15).png>)
 6.  In the following page, complete the Service provider details as follows:
 
     | ACS URL        | Enter the **Reply Url** value shown in the Cusna dashboard  |
