@@ -86,15 +86,16 @@ Once the key is generated, complete the integration in the Cusna dashboard:
 
 
 {% hint style="warning" %}
-Unbound MPSK mode cannot be manually enable on Aruba Central.
+Unbound MPSK mode cannot be enabled manually on Aruba Cen**tral**.
 
-When you connect a Cusna Network with a WLAN and SSID, Cusna programmatically enable the Unbound MPSK mode on the SSID via APIs.
+When you connect a Cusna Network with a WLAN and SSID, Cusna programmatically enables the Unbound MPSK mode on the SSID via APIs.
 
-If you make a change to the SSID  on the Central dashboard, it will lose the Unbound MPSK support.
+**If you make a change to the SSID  on the Central dashboard, it will lose the Unbound MPSK support.**
 
-To re-enable it, go tu Cusna dashboard, **Setup** > **Integration** and click **Edit** on the Aruba integration card. Click **Enable Unbound MPSK on SS**ID.
+To re-enable it, go to Cusna dashboard, **Setup** > **Integration** and click **Edit** on the Aruba integration card. Click **Enable Unbound MPSK on SS**ID.
 
-![](../../.gitbook/assets/image.png)
+![](../../.gitbook/assets/image.png)\
+
 
 On the next dialog select your **Group** and **SSID** and click Setup. \
 ![](<../../.gitbook/assets/image (1).png>)
