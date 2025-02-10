@@ -17,9 +17,9 @@ Traditional RADIUS-based iPSK relies on MAC authentication, requiring each devic
 Each **Location** in Cusna is associated to a **WLAN** in the Aruba Central dashboard.&#x20;
 
 1. Setup a **Group** for your project, configuring it with ArubaOS 10 architecture\
-   ![](../../.gitbook/assets/image.png)
+   ![](<../../.gitbook/assets/image (2).png>)
 2. Select the **Config** wheel to start configuring the Group\
-   <img src="../../.gitbook/assets/image (1).png" alt="" data-size="original">
+   <img src="../../.gitbook/assets/image (1) (1).png" alt="" data-size="original">
 3. Under **Security Tab** add the Radius Authentication Server:\
    Enter a **Name**, such as _CusnaRADIUS_\
    IP Address: \<will be provided by Cloud4Wi>\
@@ -29,7 +29,7 @@ Each **Location** in Cusna is associated to a **WLAN** in the Aruba Central dash
    ![](<../../.gitbook/assets/image (9).png>)\
 
 4. Next, select the **WLAN** tab and then the Plus sign next to add SSID\
-   ![](<../../.gitbook/assets/image (2).png>)
+   ![](<../../.gitbook/assets/image (2) (1).png>)
 5. There are many parameters that can be customized.  For now, we will create a simple WLAN network. Type in a **SSID** name and click Next
 6. Click **Next** and select **Static** on **Client VLAN Assignment**, enter a VLAN  and click Next
 7.  In the **Security** tab, under **Key Management**, select **MPSK-AES** and then pull down on the **Primary Server** setting to select the Radius Server you configured above \
@@ -82,10 +82,23 @@ Once the key is generated, complete the integration in the Cusna dashboard:
   \
   ![](<../../.gitbook/assets/image (14).png>)\
   \
+  \
 
 
-\
+{% hint style="warning" %}
+Unbound MPSK mode cannot be manually enable on Aruba Central.
 
+When you connect a Cusna Network with a WLAN and SSID, Cusna programmatically enable the Unbound MPSK mode on the SSID via APIs.
+
+If you make a change to the SSID  on the Central dashboard, it will lose the Unbound MPSK support.
+
+To re-enable it, go tu Cusna dashboard, **Setup** > **Integration** and click **Edit** on the Aruba integration card. Click **Enable Unbound MPSK on SS**ID.
+
+![](../../.gitbook/assets/image.png)
+
+On the next dialog select your **Group** and **SSID** and click Setup. \
+![](<../../.gitbook/assets/image (1).png>)
+{% endhint %}
 
 
 
