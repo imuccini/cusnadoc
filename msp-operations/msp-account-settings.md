@@ -122,8 +122,17 @@ You need these values to setup the SAML authentication into your IdP service.
     | ACS entity     | Enter the **Entity ID** value shown in the Cusna dashboard. |
     | Name ID format | EMAIL                                                       |
     | Name ID        | Basic Information > Primary email                           |
-7. Click **Continue** and and in the following page add any additional fields you want to pass to the portal. Common fields include First name and Last name, which should be passed as _firstName_, _lastName_ respectively.\
-   In the **Group membership** card, select the Groups that you want to pass during the authentication; you can configure the groups names in the Cunsa porta to filter only the groups that you want to allow.\
+7. Click **Continue** and and in the following page add the following attribute mapping:\
+   \- First Name > `firstName`\
+   \- Last Name > `lastName`\
+   \- Primary Email > `primaryEmail`\
+   \
+   ![](<../.gitbook/assets/image (359).png>)\
+   \
+   In the **Group membership** card, select the Groups that you want to pass during the authentication, and in the App Attribute enter "`GROUP_`"\
+   ![](<../.gitbook/assets/image (360).png>)\
+   \
+   You can later configure the groups names in the Cunsa porta to filter only the groups that you want to allow.\
 
 8. To complete the set up, click **Finish**.
 
