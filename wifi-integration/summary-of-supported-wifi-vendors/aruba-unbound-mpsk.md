@@ -16,10 +16,12 @@ Traditional RADIUS-based iPSK relies on MAC authentication, requiring each devic
 
 Each **Location** in Cusna is associated to a **WLAN** in the Aruba Central dashboard.&#x20;
 
-1. Setup a **Group** for your project, configuring it with ArubaOS 10 architecture\
-   ![](<../../.gitbook/assets/image (2).png>)
+1. Setup a **Group** for your project, configuring it with **ArubaOS 10** architecture\
+   ![](<../../.gitbook/assets/image (2).png>)\
+
 2. Select the **Config** wheel to start configuring the Group\
-   <img src="../../.gitbook/assets/image (1) (1).png" alt="" data-size="original">
+   <img src="../../.gitbook/assets/image (1) (1).png" alt="" data-size="original">\
+
 3. Under **Security Tab** add the Radius Authentication Server:\
    Enter a **Name**, such as _CusnaRADIUS_\
    IP Address: \<will be provided by Cloud4Wi>\
@@ -29,15 +31,17 @@ Each **Location** in Cusna is associated to a **WLAN** in the Aruba Central dash
    ![](<../../.gitbook/assets/image (9).png>)\
 
 4. Next, select the **WLAN** tab and then the Plus sign next to add SSID\
-   ![](<../../.gitbook/assets/image (2) (1).png>)
-5. There are many parameters that can be customized.  For now, we will create a simple WLAN network. Type in a **SSID** name and click Next
-6. Click **Next** and select **Static** on **Client VLAN Assignment**, enter a VLAN  and click Next
+   ![](<../../.gitbook/assets/image (2) (1).png>)\
+
+5. There are many parameters that can be customized.  For now, we will create a simple WLAN network. Type in a **SSID** name (ESSID) and click Next
+6. On the next scree, select **Static** on **Client VLAN Assignment**, enter a VLAN  and click Next
 7.  In the **Security** tab, under **Key Management**, select **MPSK-AES** and then pull down on the **Primary Server** setting to select the Radius Server you configured above \
 
 
     <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
-8. Expand the Advanced Settings and go down and disable 802.11r\
-   ![](<../../.gitbook/assets/image (4).png>)
+8. Expand the **Advanced Settings** and go down and disable **802.11r**\
+   ![](<../../.gitbook/assets/image (4).png>)\
+
 9.  Click **Next** two more times and your WLAN SSID with MPSK AES should be complete.\
 
 
@@ -52,7 +56,7 @@ To connect Cusna to your Aruba Central account, you need to generate an API Key 
 1. At the **Global** level, select **Organization** and then **Platform Integration**
 2. Chose **REST API**\
    ![](<../../.gitbook/assets/image (5).png>)![](<../../.gitbook/assets/image (6).png>)
-3.  In the first tab, make sure to take not of the API hostname for  your account, such as "[apigw-uswest5.central.arubanetworks.com](https://apigw-uswest5.central.arubanetworks.com)"\
+3.  In the first tab, make sure to take not of the API hostname for  your account, such as "[apigw-uswest5.central.arubanetworks.com](https://apigw-uswest5.central.arubanetworks.com)" (take only the hostname, without "https://")\
 
 
     <div align="left"><figure><img src="../../.gitbook/assets/image (11).png" alt="" width="375"><figcaption></figcaption></figure></div>
