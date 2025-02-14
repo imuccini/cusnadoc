@@ -54,7 +54,7 @@ Each **Location** in Cusna is associated to a **WLAN** in the Aruba Central dash
 To connect Cusna to your Aruba Central account, you need to generate an API Key in your Aruba Central account:
 
 1. At the **Global** level, select **Organization** and then **Platform Integration**
-2. Chose **REST API**\
+2. Chose [**REST API**](https://app-uswest5.central.arubanetworks.com/frontend/#/APIGATEWAY)\
    ![](<../../.gitbook/assets/image (5).png>)![](<../../.gitbook/assets/image (6).png>)
 3.  In the first tab, make sure to take not of the API hostname for  your account, such as "[apigw-uswest5.central.arubanetworks.com](https://apigw-uswest5.central.arubanetworks.com)" (take only the hostname, without "https://")\
 

@@ -18,6 +18,7 @@
 * [Coming soon...](wifi-integration/coming-soon.../README.md)
   * [Engenius Cloud](wifi-integration/coming-soon.../engenius-cloud.md)
   * [Zyxel Nebula (Pro)](wifi-integration/coming-soon.../zyxel-nebula-pro.md)
+  * [Cisco Catalyst WLC (IOS-XE)](wifi-integration/coming-soon.../cisco-catalyst-wlc-ios-xe.md)
 
 ## Service management
 
