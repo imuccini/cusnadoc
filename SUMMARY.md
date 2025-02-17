@@ -90,3 +90,4 @@
 ## Deployment guides
 
 * [Student living](deployment-guides/student-living.md)
+* [BYOD](deployment-guides/byod.md)
