@@ -89,4 +89,4 @@
 
 ## Deployment guides
 
-* [Campus](deployment-guides/campus.md)
+* [Student living](deployment-guides/student-living.md)
