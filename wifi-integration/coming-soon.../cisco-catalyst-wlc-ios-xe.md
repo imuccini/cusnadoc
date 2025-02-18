@@ -66,7 +66,7 @@ Click **Apply to Device** to save. Next, click on the **AAA Method List** tab, *
 | Group Type:             | group         |
 | Assigned Server Groups: | Cusna\_Radius |
 
-Click **Apply to Device** to save. Next, click the **Auhtorization** sub nav menu on the left and click **Add**. Configure with:
+Click **Apply to Device** to save. Next, click the **Authorization** sub nav menu on the left and click **Add**. Configure with:
 
 <table data-header-hidden><thead><tr><th width="392">Method List Name:</th><th>guest_acct</th></tr></thead><tbody><tr><td>Method List Name</td><td>Cusna_AuthZ</td></tr><tr><td>Type:</td><td>network</td></tr><tr><td>Assigned Server Groups:</td><td>Cusna_Radius</td></tr></tbody></table>
 
@@ -110,19 +110,20 @@ On the **General** tab:
 
 On the **Security > Layer 2** tab:
 
-| Setting                | Value        |
-| ---------------------- | ------------ |
-| Layer 2 Security Mode: | WPA + WPA2   |
-| MAC Filtering:         | Enabled      |
-| 802.1x                 | Disabled     |
-| PSK                    | Enabled      |
-| Easy-PSK               | Enabled      |
-| Authorization List     | Cusna\_AuthZ |
+| Setting                | Value                                                  |
+| ---------------------- | ------------------------------------------------------ |
+| Layer 2 Security Mode: | WPA + WPA2                                             |
+| MAC Filtering:         | Enabled                                                |
+| 802.1x                 | Disabled                                               |
+| PSK                    | Enabled                                                |
+| Easy-PSK               | Enabled                                                |
+| Authorization List     | Cusna\_AuthZ _(Authorization List previously created)_ |
+| Fast Transition        | Disabled or Enabled (not Adaptive Enabled)             |
 
 On the **Security > AAA** tab:
 
-| Authentication List | Cusna\_AuthN |
-| ------------------- | ------------ |
+| Authentication List | Cusna\_AuthN _(Authentication List previously created)_ |
+| ------------------- | ------------------------------------------------------- |
 
 ### Policy
 
@@ -171,7 +172,7 @@ Cusna does not integrate directly with on-prem Cisco Catalyst 9800 WLCs.
 
 * Log in to your Cusna account and click **Setting**.&#x20;
 * Expand the **WiFi setup** card, select **Cisco WLC**&#x20;
-* Enter a **Name** for your WLC and clis **Save**.
+* Enter a **Name** for your WLC and click **Save**.
 
 
 
@@ -181,10 +182,12 @@ Although Cusna does not integrates directly with the WLC via APIs, the Network a
 
 The Network an Account is associated with, becomes the account "Home Network". Only when the user is connected to an Access Points of its Home Network, Cusna enforces the Account UDN.
 
-The Network the user is connected form is detected by means of **Site Tags**.  When you setp a Network you need to specify:
+The Network the user is connected form is detected by means of **Site Tags**.  When you setup a Network you need to specify:
 
 * **SSID Name**: the PPSK generated for the user will work only on this SSID name
-* **Site Tag**: the Site Tag that can be used to match the authetnication request with this Cusna Network.
+* **Site Tag**: the Site Tag that can be used to match the authentication request with this Cusna Network.
+
+<figure><img src="../../.gitbook/assets/image (361).png" alt=""><figcaption></figcaption></figure>
 
 
 
