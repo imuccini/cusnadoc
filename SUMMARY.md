@@ -90,4 +90,5 @@
 ## Deployment guides
 
 * [Student living](deployment-guides/student-living.md)
+  * [Sample FAQ: WiFi for the Resident Hall](deployment-guides/student-living/sample-faq-wifi-for-the-resident-hall.md)
 * [BYOD](deployment-guides/byod.md)
