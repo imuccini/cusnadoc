@@ -20,7 +20,7 @@ The status is refreshed whenever you load the dashboard page, but you can check 
 
 
 
-By clicking the red arrow in the widget <img src="../../.gitbook/assets/image (4) (1).png" alt="" data-size="line">, you can access to an inner section that contains the full list of access points in the deployment with their related operational status.
+By clicking the red arrow in the widget <img src="../../.gitbook/assets/image (4) (1) (1).png" alt="" data-size="line">, you can access to an inner section that contains the full list of access points in the deployment with their related operational status.
 
 <figure><img src="../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 

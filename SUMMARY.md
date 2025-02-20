@@ -7,6 +7,7 @@
 * [Summary of supported WiFi vendors](wifi-integration/summary-of-supported-wifi-vendors/README.md)
   * [Cisco Meraki](wifi-integration/summary-of-supported-wifi-vendors/cisco-meraki/README.md)
     * [Cisco Meraki Easy PSK](wifi-integration/summary-of-supported-wifi-vendors/cisco-meraki/cisco-meraki-easy-psk.md)
+  * [Cisco Catalyst WLC (IOS-XE)](wifi-integration/coming-soon.../cisco-catalyst-wlc-ios-xe.md)
   * [Aruba - Unbound MPSK](wifi-integration/summary-of-supported-wifi-vendors/aruba-unbound-mpsk.md)
   * [Fortinet (FortiGate Secure Wireless Controller)](wifi-integration/summary-of-supported-wifi-vendors/fortinet-fortigate-secure-wireless-controller.md)
   * [Extreme Networks](wifi-integration/summary-of-supported-wifi-vendors/extreme-networks.md)
@@ -15,10 +16,6 @@
   * [Juniper (Mist)](wifi-integration/summary-of-supported-wifi-vendors/juniper-mist.md)
   * [TP-Link Omada](wifi-integration/summary-of-supported-wifi-vendors/tp-link-omada.md)
   * [Huawei - iMaster NCE-Campus](wifi-integration/summary-of-supported-wifi-vendors/huawei-imaster-nce-campus.md)
-* [Coming soon...](wifi-integration/coming-soon.../README.md)
-  * [Engenius Cloud](wifi-integration/coming-soon.../engenius-cloud.md)
-  * [Zyxel Nebula (Pro)](wifi-integration/coming-soon.../zyxel-nebula-pro.md)
-  * [Cisco Catalyst WLC (IOS-XE)](wifi-integration/coming-soon.../cisco-catalyst-wlc-ios-xe.md)
 
 ## Service management
 
@@ -56,6 +53,8 @@
   * [Office RnD](cloud-identity-platforms-integrations/coworking-management-platforms/office-rnd.md)
   * [Nexudus](cloud-identity-platforms-integrations/coworking-management-platforms/nexudus.md)
   * [Andcards](cloud-identity-platforms-integrations/coworking-management-platforms/andcards.md)
+* [Property Management Systems](cloud-identity-platforms-integrations/property-management-systems/README.md)
+  * [Oracle Opera Cloud](cloud-identity-platforms-integrations/property-management-systems/oracle-opera-cloud.md)
 * [Enterprise cloud IdPs](cloud-identity-platforms-integrations/enterprise-cloud-idps/README.md)
   * [Microsoft Entra ID (SAML)](cloud-identity-platforms-integrations/enterprise-cloud-idps/microsoft-entra-id-saml.md)
   * [Microsoft Entra ID (oAuth)](cloud-identity-platforms-integrations/enterprise-cloud-idps/microsoft-entra-id-oauth.md)
@@ -84,6 +83,9 @@
 
 ## PRODUCT
 
+* [Coming soon...](wifi-integration/coming-soon.../README.md)
+  * [Engenius Cloud](wifi-integration/coming-soon.../engenius-cloud.md)
+  * [Zyxel Nebula (Pro)](wifi-integration/coming-soon.../zyxel-nebula-pro.md)
 * [Changelog](product/changelog.md)
 * [Datasheet](product/datasheet.md)
 
