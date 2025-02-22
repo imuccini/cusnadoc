@@ -106,7 +106,7 @@ However, when the student connects their wireless devices to other networks on c
 
 
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Wired Devices Onboarding
 
@@ -121,5 +121,5 @@ Non-headless devices, once connected to the ETH port, can be blocked and prompte
 3. Give a name to the device and approve it.
 4. Disconnect and reconnect the cable device to the ETH port
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

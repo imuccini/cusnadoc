@@ -20,7 +20,7 @@ Each **Location** in Cusna is associated to a **WLAN** in the Aruba Central dash
    ![](<../../.gitbook/assets/image (2) (1).png>)\
 
 2. Select the **Config** wheel to start configuring the Group\
-   <img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" data-size="original">\
+   <img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" data-size="original">\
 
 3. Under **Security Tab** add the Radius Authentication Server:\
    Enter a **Name**, such as _CusnaRADIUS_\
@@ -102,7 +102,7 @@ To re-enable it, go to Cusna dashboard, **Setup** > **Integration** and click **
 
 
 On the next dialog select your **Group** and **SSID** and click Setup. \
-![](<../../.gitbook/assets/image (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (1) (1) (1) (1).png>)
 {% endhint %}
 
 
