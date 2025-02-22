@@ -18,7 +18,7 @@ MSPs Admins can access the **Anomalies** page directly form the main menu. On th
 
 When MSPs mark an anomaly as Solved, it will disappear also from the Organization Dashboard of the Organization the Anomaly refers to.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
