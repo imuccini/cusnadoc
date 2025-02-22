@@ -1,47 +1,46 @@
 # Passpoint
 
-Cloud4Wi integration allows to bring to Cusna end users access to a secure network via WPA2 Enterprise and/or Passpoint, and optionally to enable access to the access networks in the OpenRoaming federation.
+Passpoint option allows resident to download a Passpoint profile directly form the WiFi portal, on their supported devices. Passpoint will work on all the access points part of the customer network.
+
+## Network Setup
+
+To enable Passpoint you need to create and or configure a dedicated Passpoint-enabled SSID on your network.
+
+To find step by step user guides on how to configure your WiFi network, please refer to our Core Paltform user guides:
+
+* [Aruba Central](https://cloud4wi.zendesk.com/hc/en-us/articles/21805428506893-Aruba-Central-Passpoint-configuration)
+* [Cisco Catalyst 9800](https://cloud4wi.zendesk.com/hc/en-us/articles/10531050431885-Cisco-Catalyst-9800-Passpoint-configuration)
+* [Cisco Meraki](https://cloud4wi.zendesk.com/hc/en-us/articles/4413079885069-Meraki-Passpoint-configuration)
+* [Extreme CloudIQ](https://cloud4wi.zendesk.com/knowledge/articles/5945572850189/en-us?brand_id=2977846\&return_to=%2Fhc%2Fen-us%2Farticles%2F5945572850189)
+* [Forinet Fortigate](https://cloud4wi.zendesk.com/hc/en-us/signin?return_to=https%3A%2F%2Fcloud4wi.zendesk.com%2Fhc%2Fen-us%2Farticles%2F6031652408077-Fortinet-FortiGate-Passpoint-Configuration)
+* [more...](https://cloud4wi.zendesk.com/hc/en-us/articles/18939388439309-Passpoint-Network-Configuration)
+
+To configure the network you need some parameters, including:
+
+* RADIUS IP/Secret/Ports
+* Passpoint Realm
+
+You can find these parameters in the **Setup**, **Integration** page of your Cusna dashboard. On the WiFi Network card find **Show RADIUS data**.
+
+<figure><img src="../.gitbook/assets/image (365).png" alt=""><figcaption></figcaption></figure>
+
+The dialog RADIUS Information provides all the data you need to configure your network.
+
+<figure><img src="../.gitbook/assets/image (366).png" alt=""><figcaption></figcaption></figure>
 
 
 
-## Setup
+## Enabling Passpoint onboarding
 
-In the Integration page, find the Secure WiFi by Cloud4Wi section and click WPN Name.
+Go to **Setup**, **Onboarding** and find the **Passpoint** card. Click the toggle to enable Passpoint onboarding.
 
-Enter the API credentials generated in your Cloud4Wi account.
-
-* API Key
-* API Secret
-* Organization ID
-
-<figure><img src="../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
-
-Read this article to learn how to [create API credentials in Cloud4Wi](https://create.cloud4wi.com/dev-hub/api-reference/getting-started).
-
-
-
-
-
-## Configuration
-
-In the General options page, once you have your Cloud4Wi account connected, you'll see a panel SecureWiFi by Cloud4Wi.
-
-Here you can opt to enable:
-
-* WPA2 Enterprise
-* Passpoint
-
-<figure><img src="../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
-
-When enabling 802.1X or Passpoint, for each Account of type Tenant that you create in Cusna, a matching WiFi account is created and kept in sync in your Cloud4Wi account.
-
-
+<figure><img src="../.gitbook/assets/image (364).png" alt=""><figcaption></figcaption></figure>
 
 ## User experience
 
-In the WiFi Portal, the Tenant will see two new panels:
+In the WiFi Portal, the Resident will see a Passpoint panel.
 
-* **802.1X**: name of the secure network and credentials
-* **Passpoint**: link to download a Passpoint profile - only visible on Android and apple devices
+<figure><img src="../.gitbook/assets/image (367).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (96).png" alt="" width="375"><figcaption></figcaption></figure>
+By Clicking Enroll, the user is redirected to the Passpoint Enrollment page, that guides the in the process of downloading and installing the Profile certificate ([learn more](https://cloud4wi.zendesk.com/hc/en-us/articles/4413031728781-WiFi-Profile-Download-Page))
+
