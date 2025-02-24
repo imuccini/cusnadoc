@@ -36,9 +36,7 @@ Go to **Setup**, **Onboarding** and find the **Passpoint** card. Click the toggl
 
 ## User experience
 
-In the WiFi Portal, the Resident will see a Passpoint panel.
+In the WiFi Portal, the Resident will see a Passpoint panel. By Clicking **Enroll**, the user is redirected to the Passpoint Download page, that guides the in the process of downloading and installing the Profile certificate ([learn more](https://cloud4wi.zendesk.com/hc/en-us/articles/4413031728781-WiFi-Profile-Download-Page))
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
-By Clicking **Enroll**, the user is redirected to the Passpoint Download page, that guides the in the process of downloading and installing the Profile certificate ([learn more](https://cloud4wi.zendesk.com/hc/en-us/articles/4413031728781-WiFi-Profile-Download-Page))
+<figure><img src="../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
 
