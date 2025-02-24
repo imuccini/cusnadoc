@@ -86,7 +86,11 @@ The home page contains different panels that might be visible or not depending o
 
 
 
-<figure><img src="../../.gitbook/assets/image (72).png" alt=""><figcaption><p>WiFi Portal screenshots in desktop and mobile views</p></figcaption></figure>
+### Demo
+
+
+
+<figure><img src="../../.gitbook/assets/WiFi Portal Demo Short.gif" alt=""><figcaption></figcaption></figure>
 
 
 
