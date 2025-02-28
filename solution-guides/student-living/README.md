@@ -1,4 +1,4 @@
-# Campus
+# Student living
 
 ## Overview
 
@@ -26,11 +26,11 @@ The WiFi Portal URL can be shared in several ways, such as:
 * Publishing it in a documentation article on the university’s website or WiFi information page.
 * Incorporating it into onboarding materials distributed to students.
 
-Once students access the portal, they can log in using their school credentials. Typically, external IdPs such as [Microsoft Entra](../cloud-identity-platforms-integrations/enterprise-cloud-idps/microsoft-entra-id-saml.md), [Google](../cloud-identity-platforms-integrations/enterprise-cloud-idps/google-workspace-oauth.md), or Shibboleth are used for authentication. Administrators must configure the IdP integration in the Cusna dashboard, including setting options such as group mapping and filtering in the onboarding settings.
+Once students access the portal, they can log in using their school credentials. Typically, external IdPs such as [Microsoft Entra](../../cloud-identity-platforms-integrations/enterprise-cloud-idps/microsoft-entra-id-saml.md), [Google](../../cloud-identity-platforms-integrations/enterprise-cloud-idps/google-workspace-oauth.md), or Shibboleth are used for authentication. Administrators must configure the IdP integration in the Cusna dashboard, including setting options such as group mapping and filtering in the onboarding settings.
 
-A common configuration in this scenario is enabling authentication via [IdP SSO](../service-management/wifi-portal-and-onboarding/#sso-authentication) (using school credentials). The button label presented to students can be customized, for example, “Access with your school credentials.”
+A common configuration in this scenario is enabling authentication via [IdP SSO](../../service-management/wifi-portal-and-onboarding/#sso-authentication) (using school credentials). The button label presented to students can be customized, for example, “Access with your school credentials.”
 
-A passwordless login option allows students who have already onboarded to log in using just their email address. However, adding this option may create unnecessary complexity and confusion for students. Therefore, it is recommended to disable this feature in such cases ([learn more](../service-management/wifi-portal-and-onboarding/#passwrodless-login)).
+A passwordless login option allows students who have already onboarded to log in using just their email address. However, adding this option may create unnecessary complexity and confusion for students. Therefore, it is recommended to disable this feature in such cases ([learn more](../../service-management/wifi-portal-and-onboarding/#passwrodless-login)).
 
 
 
@@ -38,7 +38,7 @@ A passwordless login option allows students who have already onboarded to log in
 
 <summary>Onboarding flow with Google as IdP</summary>
 
-![](<../.gitbook/assets/Campus experience (1).gif>)
+![](<../../.gitbook/assets/Campus experience (1).gif>)
 
 </details>
 
@@ -46,7 +46,7 @@ A passwordless login option allows students who have already onboarded to log in
 
 <summary>Onboarding flow with Microsoft Entra</summary>
 
-<img src="../.gitbook/assets/microsoftentraaccess.gif" alt="" data-size="original">
+<img src="../../.gitbook/assets/microsoftentraaccess.gif" alt="" data-size="original">
 
 </details>
 
@@ -56,11 +56,11 @@ A passwordless login option allows students who have already onboarded to log in
 
 Once students are activated, they can access the network with all their devices.
 
-If they encounter issues connecting a device using PPSK, the [MAC bypass](../service-management/wifi-portal-and-onboarding/iot-devices-authentication.md) option can be enabled. This allows students to enter their device’s MAC address for authorization via RADIUS. Administrators can assist students by adding and managing these devices through the Dashboard on the Account profile page.
+If they encounter issues connecting a device using PPSK, the [MAC bypass](../../service-management/wifi-portal-and-onboarding/iot-devices-authentication.md) option can be enabled. This allows students to enter their device’s MAC address for authorization via RADIUS. Administrators can assist students by adding and managing these devices through the Dashboard on the Account profile page.
 
 Most IdPs, particularly those relying on the SAML protocol (e.g., Shibboleth), do not provide information about when a user’s access should be terminated. In such cases, planning a de-onboarding strategy is essential.
 
-A simple and effective approach is to enable an [automatic suspension](../service-management/general-options/service-options.md#automatic-service-termination) of service after a set number of days (e.g., every 90 days). Students are [notified via email](../service-management/general-options/service-options.md#service-termination-notice) in advance and can easily renew their account by visiting the portal and logging in with SSO.
+A simple and effective approach is to enable an [automatic suspension](../../service-management/general-options/service-options.md#automatic-service-termination) of service after a set number of days (e.g., every 90 days). Students are [notified via email](../../service-management/general-options/service-options.md#service-termination-notice) in advance and can easily renew their account by visiting the portal and logging in with SSO.
 
 Another strategy is to assign a generic expiration date to the group the students belong to. In this setup, all users in the group will have their accounts terminated on the configured date.
 

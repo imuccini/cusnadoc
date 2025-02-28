@@ -92,8 +92,9 @@
 * [Changelog](product/changelog.md)
 * [Datasheet](product/datasheet.md)
 
-## Deployment guides
+## Solution guides
 
-* [Student living](deployment-guides/student-living.md)
-  * [Sample FAQ: WiFi for the Resident Hall](deployment-guides/student-living/sample-faq-wifi-for-the-resident-hall.md)
-* [BYOD](deployment-guides/byod.md)
+* [Student living](solution-guides/student-living/README.md)
+  * [Sample FAQ: WiFi for the Resident Hall](solution-guides/student-living/sample-faq-wifi-for-the-resident-hall.md)
+* [Hospitality](solution-guides/hospitality.md)
+* [BYOD](solution-guides/byod.md)
