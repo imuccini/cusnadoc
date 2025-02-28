@@ -32,7 +32,7 @@ If your Mews account has access to a Portfolio of property and you integrated it
 
 Go to **Setup**, **Onboarding** and enable the toggle next to Mews
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## User experience
 

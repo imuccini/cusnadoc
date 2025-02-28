@@ -17,10 +17,10 @@ Traditional RADIUS-based iPSK relies on MAC authentication, requiring each devic
 Each **Location** in Cusna is associated to a **WLAN** in the Aruba Central dashboard.&#x20;
 
 1. Setup a **Group** for your project, configuring it with **ArubaOS 10** architecture\
-   ![](<../../.gitbook/assets/image (2) (1).png>)\
+   ![](<../../.gitbook/assets/image (2) (1) (1).png>)\
 
 2. Select the **Config** wheel to start configuring the Group\
-   <img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" data-size="original">\
+   <img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">\
 
 3. Under **Security Tab** add the Radius Authentication Server:\
    Enter a **Name**, such as _CusnaRADIUS_\
@@ -28,24 +28,24 @@ Each **Location** in Cusna is associated to a **WLAN** in the Aruba Central dash
    Secret: \<will be provided by Cloud4Wi>\
    Auth Por: 1812\
    Accounting Port: 1813\
-   ![](<../../.gitbook/assets/image (9).png>)\
+   ![](<../../.gitbook/assets/image (9) (1).png>)\
 
 4. Next, select the **WLAN** tab and then the Plus sign next to add SSID\
-   ![](<../../.gitbook/assets/image (2) (1) (1).png>)\
+   ![](<../../.gitbook/assets/image (2) (1) (1) (1).png>)\
 
 5. There are many parameters that can be customized.  For now, we will create a simple WLAN network. Type in a **SSID** name (ESSID) and click Next
 6. On the next scree, select **Static** on **Client VLAN Assignment**, enter a VLAN  and click Next
 7.  In the **Security** tab, under **Key Management**, select **MPSK-AES** and then pull down on the **Primary Server** setting to select the Radius Server you configured above \
 
 
-    <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 8. Expand the **Advanced Settings** and go down and disable **802.11r**\
-   ![](<../../.gitbook/assets/image (4) (1).png>)\
+   ![](<../../.gitbook/assets/image (4) (1) (1).png>)\
 
 9.  Click **Next** two more times and your WLAN SSID with MPSK AES should be complete.\
 
 
-    <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -55,7 +55,7 @@ To connect Cusna to your Aruba Central account, you need to generate an API Key 
 
 1. At the **Global** level, select **Organization** and then **Platform Integration**
 2. Chose [**REST API**](https://app-uswest5.central.arubanetworks.com/frontend/#/APIGATEWAY)\
-   ![](<../../.gitbook/assets/image (5).png>)![](<../../.gitbook/assets/image (6).png>)
+   ![](<../../.gitbook/assets/image (5) (1).png>)![](<../../.gitbook/assets/image (6) (1).png>)
 3.  In the first tab, make sure to take not of the API hostname for  your account, such as "[apigw-uswest5.central.arubanetworks.com](https://apigw-uswest5.central.arubanetworks.com)" (take only the hostname, without "https://")\
 
 
@@ -80,7 +80,7 @@ Once the key is generated, complete the integration in the Cusna dashboard:
   * client ID
   *   client Secret
 
-      <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 * Click **Authorize**. The **Authorize integration** dialog appears. \
   Enter your **Access Token** and **Refresh Token** and click **Authorize**.\
   \
@@ -98,11 +98,11 @@ When you connect a Cusna Network with a WLAN and SSID, Cusna programmatically en
 
 To re-enable it, go to Cusna dashboard, **Setup** > **Integration** and click **Edit** on the Aruba integration card. Click **Enable Unbound MPSK on SS**ID.
 
-![](<../../.gitbook/assets/image (4).png>)\
+![](<../../.gitbook/assets/image (4) (1).png>)\
 
 
 On the next dialog select your **Group** and **SSID** and click Setup. \
-![](<../../.gitbook/assets/image (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (1) (1) (1) (1) (1).png>)
 {% endhint %}
 
 

@@ -29,9 +29,9 @@ Cusna offers also additional utilities to help during troubleshooting.
 
 On the **Integration** page, within the **WiFi Network** card, you can click the **Check** button for each configured integration to verify if the connection with the network management system is functioning correctly.
 
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-In case an error is detected, an alert icon <img src="../../.gitbook/assets/image (8) (1).png" alt="" data-size="line"> appears to notify an issue. You also get a permanent error notification in the main sidebar reporting that the integration is not working properly.
+In case an error is detected, an alert icon <img src="../../.gitbook/assets/image (8) (1) (1).png" alt="" data-size="line"> appears to notify an issue. You also get a permanent error notification in the main sidebar reporting that the integration is not working properly.
 
 {% hint style="info" %}
 Note that this check is performed automatically each time you open the dashboard, but no more than once every 5 minutes.
@@ -39,7 +39,7 @@ Note that this check is performed automatically each time you open the dashboard
 
 When such a problem occurs, an anomaly is reported, and you will receive an email notification if this option is enabled in your [Profile](../my-profile.md).
 
-<figure><img src="../../.gitbook/assets/image (9) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Accounts
 

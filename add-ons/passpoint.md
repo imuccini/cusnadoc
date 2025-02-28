@@ -26,7 +26,7 @@ You can find these parameters in the **Setup**, **Integration** page of your Cus
 
 The dialog RADIUS Information provides all the data you need to configure your network.
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="282"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt="" width="282"><figcaption></figcaption></figure>
 
 ## Enabling Passpoint onboarding
 

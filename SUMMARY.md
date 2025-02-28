@@ -56,6 +56,8 @@
 * [Property Management Systems](cloud-identity-platforms-integrations/property-management-systems/README.md)
   * [Oracle Opera Cloud](cloud-identity-platforms-integrations/property-management-systems/oracle-opera-cloud.md)
   * [Mews](cloud-identity-platforms-integrations/property-management-systems/mews.md)
+  * [Cloudbeds](cloud-identity-platforms-integrations/property-management-systems/cloudbeds.md)
+  * [Apaleo](cloud-identity-platforms-integrations/property-management-systems/apaleo.md)
 * [Enterprise cloud IdPs](cloud-identity-platforms-integrations/enterprise-cloud-idps/README.md)
   * [Microsoft Entra ID (SAML)](cloud-identity-platforms-integrations/enterprise-cloud-idps/microsoft-entra-id-saml.md)
   * [Microsoft Entra ID (oAuth)](cloud-identity-platforms-integrations/enterprise-cloud-idps/microsoft-entra-id-oauth.md)
