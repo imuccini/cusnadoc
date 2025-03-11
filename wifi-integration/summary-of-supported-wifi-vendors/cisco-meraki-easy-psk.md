@@ -30,7 +30,7 @@ Each **Location** in Cusna is associated to a **Network** in the Meraki dashboar
 3. On the desired SSID, click "**edit settings**" link to navigate to the **Access Control** page for this SSID.
 4. On the Access control Page, Select **Identity PSK with RADIUS** under **Security** and in the dropdown select **Easy PSK**\
    \
-   ![](<../../../.gitbook/assets/image (2) (1) (1) (1) (1).png>)\
+   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png>)\
 
 5. Set **Wi-Fi Personal Network (WPN)** to **Enabled**
 6. Click **Save changes** on the bottom of the page.
@@ -41,19 +41,19 @@ Each **Location** in Cusna is associated to a **Network** in the Meraki dashboar
 
 <summary>IoT SSID - optional</summary>
 
-If you need to support [IoT Devices Authentication](../../../service-management/wifi-portal-and-onboarding/iot-devices-authentication.md) via MAC authentication, you need to add an additional dedicated SSID in each of the Networks configured for the service.
+If you need to support [IoT Devices Authentication](../../service-management/wifi-portal-and-onboarding/iot-devices-authentication.md) via MAC authentication, you need to add an additional dedicated SSID in each of the Networks configured for the service.
 
 1. Navigate to **Wireless** > **Configure** > **SSIDs**, enable an SSID from the list and rename it with your desired network name, e.g. "_IoT Devices_". Click **Save Changes** at the bottom of the page.
 2. On the above SSID, click "**edit settings**" link to navigate to the **Access Control** page for this SSID.
 3. On the Access Control page, select **Identity PSK without RADIUS** under **Security** \
-   ![](<../../../.gitbook/assets/image (39).png>)
+   ![](<../../.gitbook/assets/image (39).png>)
 4. Select "None (direct Access)" in the Splash Page section\
-   ![](<../../../.gitbook/assets/image (40).png>)
+   ![](<../../.gitbook/assets/image (40).png>)
 5.  Finally, expand the **RADIUS** section and add Primary and Secondary RADIUS data for both the **RADIUS servers** and **RADIUS Accounting servers** sections.\
     The RADIUS data (IP addresses, Ports and Secrets are delivered as part of your onboarding email).\
 
 
-    <figure><img src="../../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -81,12 +81,12 @@ Once the key is generated from the Cisco Meraki dashboard:
 * The Organization menu will load the list of Meraki Organizations enabled on your API Kay; select the Organization that you want to link to your Cusna account.&#x20;
 * Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Next, you need to setup at least one **Network Policy**.  Once you have set up the Meraki integration, the **Network Policy** section appears.
 
-{% content-ref url="../../../service-management/network-policies.md" %}
-[network-policies.md](../../../service-management/network-policies.md)
+{% content-ref url="../../service-management/network-policies.md" %}
+[network-policies.md](../../service-management/network-policies.md)
 {% endcontent-ref %}
 
 
@@ -106,13 +106,13 @@ However, when the student connects their wireless devices to other networks on c
 
 
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Wired Devices Onboarding
 
 Wired devices can be onboarded in two different ways.
 
-Headless devices must be manually provisioned by the user on their [WiFi portal](../../../service-management/wifi-portal-and-onboarding/iot-devices-authentication.md), adding their MAC address and reference friendly name.
+Headless devices must be manually provisioned by the user on their [WiFi portal](../../service-management/wifi-portal-and-onboarding/iot-devices-authentication.md), adding their MAC address and reference friendly name.
 
 Non-headless devices, once connected to the ETH port, can be blocked and prompted to a captive portal to enroll the device.
 
@@ -121,5 +121,5 @@ Non-headless devices, once connected to the ETH port, can be blocked and prompte
 3. Give a name to the device and approve it.
 4. Disconnect and reconnect the cable device to the ETH port
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

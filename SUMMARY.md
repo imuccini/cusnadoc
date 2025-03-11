@@ -6,8 +6,9 @@
 
 * [Summary of supported WiFi vendors](wifi-integration/summary-of-supported-wifi-vendors/README.md)
   * [Cisco Meraki](wifi-integration/summary-of-supported-wifi-vendors/cisco-meraki/README.md)
-    * [Cisco Meraki Easy PSK](wifi-integration/summary-of-supported-wifi-vendors/cisco-meraki/cisco-meraki-easy-psk.md)
+    * [Meraki oAuth integration](wifi-integration/summary-of-supported-wifi-vendors/cisco-meraki/meraki-oauth-integration.md)
   * [Cisco Catalyst WLC (IOS-XE)](wifi-integration/coming-soon.../cisco-catalyst-wlc-ios-xe.md)
+  * [Cisco Meraki Easy PSK](wifi-integration/summary-of-supported-wifi-vendors/cisco-meraki-easy-psk.md)
   * [Aruba - Unbound MPSK](wifi-integration/summary-of-supported-wifi-vendors/aruba-unbound-mpsk.md)
   * [Fortinet (FortiGate Secure Wireless Controller)](wifi-integration/summary-of-supported-wifi-vendors/fortinet-fortigate-secure-wireless-controller.md)
   * [Extreme Networks](wifi-integration/summary-of-supported-wifi-vendors/extreme-networks.md)

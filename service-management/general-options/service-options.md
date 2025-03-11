@@ -44,7 +44,7 @@ This feature enables the configuration of options to automatically suspend accou
 
 The Max Duration setting allows administrators to specify the number of days after activation when an account will be automatically suspended.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Service termination notice
 

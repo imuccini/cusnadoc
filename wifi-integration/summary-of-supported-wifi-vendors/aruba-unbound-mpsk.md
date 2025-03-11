@@ -17,10 +17,10 @@ Traditional RADIUS-based iPSK relies on MAC authentication, requiring each devic
 Each **Location** in Cusna is associated to a **WLAN** in the Aruba Central dashboard.&#x20;
 
 1. Setup a **Group** for your project, configuring it with **ArubaOS 10** architecture\
-   ![](<../../.gitbook/assets/image (2) (1) (1).png>)\
+   ![](<../../.gitbook/assets/image (2) (1) (1) (1).png>)\
 
 2. Select the **Config** wheel to start configuring the Group\
-   <img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">\
+   <img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">\
 
 3. Under **Security Tab** add the Radius Authentication Server:\
    Enter a **Name**, such as _CusnaRADIUS_\
@@ -31,7 +31,7 @@ Each **Location** in Cusna is associated to a **WLAN** in the Aruba Central dash
    ![](<../../.gitbook/assets/image (9) (1).png>)\
 
 4. Next, select the **WLAN** tab and then the Plus sign next to add SSID\
-   ![](<../../.gitbook/assets/image (2) (1) (1) (1).png>)\
+   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1).png>)\
 
 5. There are many parameters that can be customized.  For now, we will create a simple WLAN network. Type in a **SSID** name (ESSID) and click Next
 6. On the next scree, select **Static** on **Client VLAN Assignment**, enter a VLAN  and click Next
@@ -102,7 +102,7 @@ To re-enable it, go to Cusna dashboard, **Setup** > **Integration** and click **
 
 
 On the next dialog select your **Group** and **SSID** and click Setup. \
-![](<../../.gitbook/assets/image (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png>)
 {% endhint %}
 
 

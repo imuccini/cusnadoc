@@ -62,6 +62,10 @@ If you need to support [IoT Devices Authentication](../../../service-management/
 
 ## Cusna setup
 
+{% hint style="info" %}
+Check the guide for the [integration using oAuth](meraki-oauth-integration.md)
+{% endhint %}
+
 To connect Cusna to your Meraki account, you need to generate an API Key in your Meraki account:
 
 1. Navigate to **Organizations** > **Settings**.

@@ -4,13 +4,13 @@
 
 In the main dashboard, the widget Anomalies lists the last issues, anomalies and important notifications related to the service.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 By clicking the arrow icon in the  the widget <img src="../../.gitbook/assets/image (5) (1) (1).png" alt="" data-size="line">, you can access to the page with the entire list of Anomalies.&#x20;
 
 You can access the **Anomalies** page form the sidebar under the **Monitor** menu.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### MSP Dashboard
 
@@ -18,7 +18,7 @@ MSPs Admins can access the **Anomalies** page directly form the main menu. On th
 
 When MSPs mark an anomaly as Solved, it will disappear also from the Organization Dashboard of the Organization the Anomaly refers to.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
