@@ -17,7 +17,7 @@ Enter the following data:
 * **Client Token**
 * **Access Token**
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Click **Setup**.&#x20;
 
@@ -25,7 +25,7 @@ A new windows will open and prompt you to login with your **Apaleo** account.
 
 If successful, a message informs you that you can close the window.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Going back to the dashboard you'll that the integration is complete.
 
@@ -35,7 +35,7 @@ Going back to the dashboard you'll that the integration is complete.
 
 When you create a Network, you need to select the Hotel form a dropdown menu.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 
 

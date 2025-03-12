@@ -29,7 +29,7 @@ Cusna offers also additional utilities to help during troubleshooting.
 
 On the **Integration** page, within the **WiFi Network** card, you can click the **Check** button for each configured integration to verify if the connection with the network management system is functioning correctly.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In case an error is detected, an alert icon <img src="../../.gitbook/assets/image (8) (1) (1).png" alt="" data-size="line"> appears to notify an issue. You also get a permanent error notification in the main sidebar reporting that the integration is not working properly.
 

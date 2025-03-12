@@ -22,23 +22,41 @@ Once you have a Project, make sure it is selected in the main dropdown next to t
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (63).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-### 2. Setup the OAuth Consent Screen
+### 2. App Setup
 
 Next, go to **API & Services** and open **OAuth consent screen** to configure the consent screen.
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (64).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (64).png" alt="" width="188"><figcaption></figcaption></figure></div>
 
-In the first step of the **OAuth consent screen** dialog, select **Internal** as **User Type**.
+Click **Get Started** to launch the setup wizard.
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (286).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-Next, fill in all the information about app name, privacy policy and terms, app domain and logo. In this section, in the **Authorized domains** section, insert:
+1. In the first screen **App Information**, enter a **Name** for your App (e.g. "Cusna") and select a support email.
+2. In the second step, **Audience**, select **Internal** and click Next.\
+   \
+   ![](../../.gitbook/assets/image.png)\
+
+3. In the second step, **Contact Information**, enter an email address.
+4. Go to the last step to access the terms and **Create** the App,
+
+### 2. Branding
+
+On the left sidebar, select **Branding**.&#x20;
+
+<div align="left"><figure><img src="../../.gitbook/assets/image (1).png" alt="" width="132"><figcaption></figcaption></figure></div>
+
+Fill in the required data about privacy policy and terms, app logo. Scroll the page until you find the  **Authorized domains** section and enter:
 
 * `cusna.io`
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (58).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-In the second step of the wizard, **Scopes**, add the following scopes by clicking "**Add or Remove Steps**":
+Click **Save** at the bottom of the page to save settings.
+
+### 3. Scopes
+
+On the left sidebar, select **Data Access**. Add the following scopes by clicking "**Add or Remove Steps**":
 
 * `/auth/userinfo.email`
 * `/auth/userinfo.profile`
@@ -47,24 +65,22 @@ Usually, you'll find these Scopes at the beginning of the list of scopes that ap
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (60).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-Once selected, click **Update** and they will be listed in the main screen in the table "**Your non-sensitive scopes**".
+Once selected, click **Update** and they will be listed in the main screen in the table "**Your non-sensitive scopes**".\
+\
+![](<../../.gitbook/assets/image (5).png>)
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (59).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 
+### 4. Setup Credentials
 
-### 3. Setup Credentials
-
-Once finalized the configuration of the OAuth consent screen, go to **API & Services** and open **Credentials**.
-
-<div align="left"><figure><img src="../../.gitbook/assets/image (65).png" alt="" width="375"><figcaption></figcaption></figure></div>
+On the left sidebar, select **Clients**.&#x20;
 
 Select "**+ Create Credentials**" and pick "**OAuth client ID**".&#x20;
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (66).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 The **Create OAuth client ID** page appears. For **Application type** select **Web application**. \
-Define a Name that users will see in the authentication screen.
+Define a **Name** that users will see in the authentication screen.
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (67).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
@@ -74,27 +90,22 @@ In **Authorized JavaScript origins** enter the following list of values:
 
 In **Authorized redirect URIs**, enter the following list of values:
 
-* [https://www.cusna.io/oauth2?target=user](https://www.cusna.io/oauth2?target=user)
+* [https://www.cusna.io/oauth?target=user](https://www.cusna.io/oauth2?target=user)
 * [https://www.cusna.io/oauth2?target=admin](https://www.cusna.io/oauth2?target=admin)
 
+At the end of the process, a dialog will show you the credentials you've just created. Copy the Client ID and Client Secret, as you'll need them in the next steps to finalize the setup in the Cusna dashboard.
 
+<div align="left"><figure><img src="../../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-At the end of the process, select the credential you just created in the main page to view its details. On the right side of the page find a copy:
+### 5. Enable APIs & Services
 
-* **Client ID**
-* **Client secret**
+Finally make sure to have enabled the proper API services. Go to **Enabled APIs & Services** form the main sidebar menu.
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (55).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (6).png" alt="" width="188"><figcaption></figcaption></figure></div>
 
-You'll need the Client ID and Client secret later to finalize the setup in the Cusna dashboard.
+Make sure to have in the list:
 
-
-
-### 4. Enable APIs & Services
-
-Finally make sure to have enabled the proper API services. Go to Enabled APIs & Services and make sure to have in the list:
-
-* Admin SDK APIs
+* **Admin SDK APIs**
 
 If this API is not in your list, click **+ Enable APIs & Services** and in the new page find and enable Admin SDK APIs.
 
