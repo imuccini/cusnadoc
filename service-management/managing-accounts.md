@@ -147,7 +147,7 @@ The CSV file must contain the following columns:
 * **VLAN**: VLAN (optional) - if empty, the default VLAN mode configured in the general options applies
 * **emailValidated**: indicate that the email is Valid. This filed MUSt be set to **True**.
 
-[Download the CSV Template](https://e530a3a8f700b78738cfb414b7013de6.cdn.bubble.io/f1710240559794x154164923530439420/Cusna_import_template.csv?_gl=1*1jktzhn*_gcl_au*Nzg2NzI3ODk0LjE3MDcyOTIwNjk.*_ga*MTY1NTk0NTA3NC4xNjg5OTU0MzIz*_ga_BFPVR2DEE2*MTcxMDIzOTEyNC4zOS4xLjE3MTAyNDA1MzkuNTcuMC4w) to prepare your data for import.
+[Download the CSV Template](https://e530a3a8f700b78738cfb414b7013de6.cdn.bubble.io/f1741948712403x824012272319282400/Cusna_import_template.csv?_gl=1*13plzbq*_gcl_au*MTUwNTgzMDgzNi4xNzQxMjQ5NTAz*_ga*NTI2ODQxNzc0LjE3NDEyNDk0ODE.*_ga_BFPVR2DEE2*MTc0MTk0MDc2MS42LjEuMTc0MTk0ODcxNS4yOS4wLjA.) to prepare your data for import.
 
 <figure><img src="../.gitbook/assets/accountupload.gif" alt=""><figcaption></figcaption></figure>
 
