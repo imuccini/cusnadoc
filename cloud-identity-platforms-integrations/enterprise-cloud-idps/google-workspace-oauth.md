@@ -46,9 +46,7 @@ On the left sidebar, select **Branding**.&#x20;
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (1).png" alt="" width="132"><figcaption></figcaption></figure></div>
 
-Fill in the required data about privacy policy and terms, app logo. Scroll the page until you find the  **Authorized domains** section and enter:
-
-* `cusna.io`
+Fill in the required data about privacy policy and terms, app logo. Scroll the page until you find the  **Authorized domains** section and enter your company domain ("company.com")
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (58).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
