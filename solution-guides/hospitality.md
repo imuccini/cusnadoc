@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Hospitality
 
 **Meeting Modern Connectivity Demands:** Hotel guests now arrive with an array of personal devices – from smartphones and laptops to streaming sticks and smart gadgets – expecting instant, reliable Wi-Fi across all of them. Studies show 98% of guests carry smartphones, 70% bring laptops, and many travel with **at least two devices** ready to connect​. Usage is heavy: **80%** use hotel Wi-Fi for remote work tasks (e.g. video calls), **66%** for streaming Netflix/YouTube, and **72%** want to cast content from their device to the in-room TV​. As a result, Wi-Fi has evolved from a nice-to-have amenity to a mission-critical service. In fact, **65% of guests get online within 7 minutes** of check-in (one-third ask for the Wi-Fi password immediately), underscoring that connectivity is **no longer optional but an absolute necessity impacting satisfaction.** Conversely, a poor Wi-Fi experience can severely damage guest loyalty – _most guests will refuse to rebook with a hotel after a bad Wi-Fi experienc&#x65;_&#x200B;. Frequent complaints include slow speeds and dropped connections (cited by 42% of guests), cumbersome login processes (29% had issues logging in), and dead zones on the property. Guests today expect a smooth, “at-home” connectivity experience in hotels, and falling short carries real costs in guest sentiment and repeat business​.
