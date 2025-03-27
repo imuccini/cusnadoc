@@ -40,11 +40,19 @@ The default character set is optimized to exclude easily confusable characters:\
 
 ### Automatic service termination
 
-This feature enables the configuration of options to automatically suspend accounts.
+This feature enables the configuration of options to automatically suspend All accounts.&#x20;
 
-The Max Duration setting allows administrators to specify the number of days after activation when an account will be automatically suspended.
+{% hint style="info" %}
+You can defined Group based automatic suspension policies on specific [Groups](../groups.md). Suspension policies set on the Group level override ant takes priority over the global setting configured in this section for Accounts belonging to those Groups.
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The option **Suspend after set number of days form activation** allows administrators to specify the number of days after activation when an account will be automatically suspended.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+The option **Suspend yearly on selected date** allows to suspend all Accounts automatically every year of a specific date.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Service termination notice
 

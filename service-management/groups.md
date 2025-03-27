@@ -71,17 +71,32 @@ In some cases, Groups are created without being associated to a specific Network
 
 When you create a group you have to enter the following inputs:
 
-* **Network**: Groups are valid at the Network level&#x20;
+* **Network**: Groups are valid at the Network level. This setting is optional, if you leave empty the group becomes a [Global Group](groups.md#global-groups)
 * **Reference name**
 * **VLAN** (optional): if you chose to set the VLAN manually, a dropdown menu shows the list of VLANs not already in use by other accounts in the same Network (or in the entire Organization if you are working with [Roaming](broken-reference) mode active). If you select **Auto**, the VLAN will be assigned automatically to the group.
-* **Domain**: domain is used in certain integrations to match the domain of self-onboarding members with the Group domain
-* **Start Date** (optional): if specified, all accounts will be automatically activated only on the specified date
-* **Stop Date** (optional): if specified, all accounts will be automatically terminated on this date
+
+
 
 If your account is configured to use [Shared PSK](groups.md#shared-vs-individual-psks) for all Group Members, in the setup screen you can set the **Group Passphrase**, choosing among
 
-* **auto**: the passphrase is generated autoamtically and will be visible in the Group settings once the group is created
+* **auto**: the passphrase is generated automatically and will be visible in the Group settings once the group is created
 * **manually**: you can manually enter a passphrase and verify its validity before creating the group
+
+
+
+The **Automatic Account Suspension** dropdown allows you to choose options for automatically suspending accounts in the Group based on predefined rules.
+
+<div align="left"><figure><img src="../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+* **Suspend on a Specific Date**: Allows you to suspend all accounts in the group on a set date you specify when choosing this option.
+* **Suspend Yearly on a Selected Date**: Suspends all accounts in the group on a specified date each year. When selected, you can choose the specific day of the year for suspension.
+* **None**: Leave this option unselected to apply no suspension policy.
+
+
+
+{% hint style="info" %}
+In cases where suspension policies are set at both the Group and the global levels ([Service Options](general-options/service-options.md)), the policies configured at the Group level override and
+{% endhint %}
 
 
 
