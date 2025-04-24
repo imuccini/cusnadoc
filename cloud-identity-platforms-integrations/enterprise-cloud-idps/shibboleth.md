@@ -35,14 +35,15 @@
 
 ### Shibboleth server setup
 
-1. Insert the following text to the Shibboleth metadata provider file **metadata-providers.xml** at the following location:\
+1. Add the following line to the Shibboleth metadata provider file "**metadata-providers.xml"** that can be found at the following location:\
    `%{idp.home}/conf/metadata-providers.xml`&#x20;
 
 ```xml
 <MetadataProvider id="CusnaMetadata" xsi:type="FilesystemMetadataProvider" metadataFile="%{idp.home}/metadata/cusna-metadata.xml">
 ```
 
-2. To enable connection between Shibboleth and Cusna, you need to define a new `RelyingParty` element in the file located at `%{idp.home}/conf/relying-party.xml`. Insert the following text to the **relying-party.xml**.
+2. To enable connection between Shibboleth and Cusna, you need to define a new `RelyingParty` element in the file located at `%{idp.home}/conf/relying-party.xml`. \
+   Add the following text to the **relying-party.xml**.
 
 ```xml
 <bean parent="RelyingPartyByName" c:relyingPartyIds="%{entityID}">
