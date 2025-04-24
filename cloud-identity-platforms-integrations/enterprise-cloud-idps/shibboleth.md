@@ -42,6 +42,57 @@
 <MetadataProvider id="CusnaMetadata" xsi:type="FilesystemMetadataProvider" metadataFile="%{idp.home}/metadata/cusna-metadata.xml">
 ```
 
+<details>
+
+<summary>Example</summary>
+
+{% code fullWidth="true" %}
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<MetadataProvider id="ShibbolethMetadata" xsi:type="ChainingMetadataProvider"
+    xmlns="urn:mace:shibboleth:2.0:metadata"
+    xmlns:security="urn:mace:shibboleth:2.0:security"
+    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+    xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:ds11="http://www.w3.org/2009/xmldsig11#"
+    xmlns:enc="http://www.w3.org/2001/04/xmlenc#"
+    xmlns:enc11="http://www.w3.org/2009/xmlenc11#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:mace:shibboleth:2.0:metadata http://shibboleth.net/schema/idp/shibboleth-metadata.xsd
+                        urn:mace:shibboleth:2.0:security http://shibboleth.net/schema/idp/shibboleth-security.xsd
+                        urn:oasis:names:tc:SAML:2.0:assertion http://docs.oasis-open.org/security/saml/v2.0/saml-schema-assertion-2.0.xsd
+                        urn:oasis:names:tc:SAML:2.0:metadata http://docs.oasis-open.org/security/saml/v2.0/saml-schema-metadata-2.0.xsd
+                        urn:oasis:names:tc:SAML:metadata:algsupport http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-metadata-algsupport-v1.0.xsd
+                        http://www.w3.org/2000/09/xmldsig# http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd
+                        http://www.w3.org/2009/xmldsig11# http://www.w3.org/TR/2013/REC-xmldsig-core1-20130411/xmldsig11-schema.xsd
+                        http://www.w3.org/2001/04/xmlenc# http://www.w3.org/TR/xmlenc-core/xenc-schema.xsd
+                        http://www.w3.org/2009/xmlenc11# http://www.w3.org/TR/2013/REC-xmlenc-core1-20130411/xenc-schema-11.xsd">
+
+
+    
+    <!-- Element Added for Cusna Integration -->
+    <MetadataProvider id="CusnaMetadata"  xsi:type="FilesystemMetadataProvider" metadataFile="%{idp.home}/metadata/cusna-metadata.xml"/>
+    <!-- Element Added for Cusna Integration -->
+    
+  
+    
+    <MetadataProvider id="incommon" xsi:type="DynamicHTTPMetadataProvider"
+                  maxCacheDuration="PT24H" minCacheDuration="PT10M">
+      <MetadataFilter xsi:type="SignatureValidation" requireSignedRoot="true"
+                  certificateFile="%{idp.home}/credentials/inc-md-cert-mdq.pem" />
+      <MetadataFilter xsi:type="RequiredValidUntil" maxValidityInterval="P14D" />
+      <MetadataQueryProtocol>https://mdq.incommon.org/</MetadataQueryProtocol>
+    </MetadataProvider>
+    <MetadataProvider id="TestMetadata"  xsi:type="FilesystemMetadataProvider" metadataFile="/opt/shibboleth-idp/metadata/testsp-metadata.xml"/>
+</MetadataProvider>
+
+```
+{% endcode %}
+
+</details>
+
 2. To enable connection between Shibboleth and Cusna, you need to define a new `RelyingParty` element in the file located at `%{idp.home}/conf/relying-party.xml`. \
    Add the following text to the **relying-party.xml**.
 
