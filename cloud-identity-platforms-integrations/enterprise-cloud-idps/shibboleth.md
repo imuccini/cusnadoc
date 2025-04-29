@@ -1,5 +1,9 @@
 # Shibboleth
 
+{% hint style="success" %}
+This integration guide has been tested on Shibboleth version 4 and version 5. &#x20;
+{% endhint %}
+
 ### Note
 
 > Throughout this guide, `%{idp.home}` is the directory where you installed your Shibboleth Identity Provider. When configuring Shibboleth, make sure to replace `%{idp.home}` with your specific path (e.g. `/opt/shibboleth`)
@@ -32,8 +36,11 @@
 
 ### Shibboleth server setup
 
-1. Add the following line to the Shibboleth metadata provider file "**metadata-providers.xml"** that can be found at the following location:\
-   `%{idp.home}/conf/metadata-providers.xml`&#x20;
+1. Upload the `cusna-metadata.xml` .file downloaded on the previous step on a folder on the Shibboleth server, for example: \
+   `%{idp.home}/metadata/`
+2. Find the Shibboleth metadata provider file "**metadata-providers.xml"** that can be found at the following location:\
+   `%{idp.home}/conf/metadata-providers.xml` \
+   and add the following line to it:
 
 ```xml
 <MetadataProvider id="CusnaMetadata" xsi:type="FilesystemMetadataProvider" metadataFile="%{idp.home}/metadata/cusna-metadata.xml">
