@@ -16,6 +16,14 @@ This integration guide has been tested on Shibboleth version 4 and version 5. &#
    to\
    `%{idp.home}/idp/profile/SAML2/POST/SSO`&#x20;
 
+<details>
+
+<summary>Example of edited <code>idp-metadata.xml</code></summary>
+
+
+
+</details>
+
 ### Cusna setup
 
 1. Go to **Setup** and find the **IdP Integration** card.&#x20;
@@ -34,13 +42,27 @@ This integration guide has been tested on Shibboleth version 4 and version 5. &#
 
 4. Download the **Cusna metadata XML file** from the download section that will appear. Rename the metadata file to `cusna-metadata.xml` .
 
+<details>
+
+<summary>Example of <code>cusna-metadata.xml</code></summary>
+
+
+
+</details>
+
+
+
 ### Shibboleth server setup
+
+#### Add SP references to Shibboleth
+
+There are multiple ways to configure the IdP with the data of the SP. The following one is one general option:
 
 1. Upload the `cusna-metadata.xml` .file downloaded on the previous step on a folder on the Shibboleth server, for example: \
    `%{idp.home}/metadata/`
-2. Find the Shibboleth metadata provider file "**metadata-providers.xml"** that can be found at the following location:\
+2. Edit the Shibboleth metadata provider file "**metadata-providers.xml"** that can be found at the following location:\
    `%{idp.home}/conf/metadata-providers.xml` \
-   and add the following line to it:
+   adding the following line to it:
 
 ```xml
 <MetadataProvider id="CusnaMetadata" xsi:type="FilesystemMetadataProvider" metadataFile="%{idp.home}/metadata/cusna-metadata.xml">
@@ -48,7 +70,7 @@ This integration guide has been tested on Shibboleth version 4 and version 5. &#
 
 <details>
 
-<summary>Example</summary>
+<summary>Example of edited <code>metadata-providers.xml</code></summary>
 
 {% code fullWidth="true" %}
 ```xml
@@ -97,7 +119,9 @@ This integration guide has been tested on Shibboleth version 4 and version 5. &#
 
 </details>
 
-2. To enable connection between Shibboleth and Cusna, you need to define a new `RelyingParty` element in the file located at\
+#### Make sure the Shibboleth IdP trust the SP
+
+1. To enable connection between Shibboleth and Cusna, you need to define a new `RelyingParty` element in the file located at\
    &#x20;`%{idp.home}/conf/relying-party.xml`. \
    Add the following text to the **relying-party.xml**.
 
@@ -121,116 +145,139 @@ This integration guide has been tested on Shibboleth version 4 and version 5. &#
 Make sure the `c:relyingPartyIds` (line 1) matches the **entityID** value specified in Cusna metadata XML file **cusna-metadata.xml** (eg.: cusna-14251113262c18bccc2478a05815fa02724db3c619d29d614d22f38e1e7f154b).
 {% endhint %}
 
-3.  Make sure to configure the attributes names as per the below table in order to make them readable by Cusna.\
-    \
-    Please note that the attribute naming matches with the SAML2 standard.\
+<details>
 
-
-    <table><thead><tr><th width="220.03558349609375">Internal Attribute</th><th width="377.41510009765625">SAML Attribute Name</th><th>Required</th></tr></thead><tbody><tr><td><code>mail</code></td><td><code>urn:oid:0.9.2342.19200300.100.1.3</code></td><td>yes</td></tr><tr><td><code>givenName</code></td><td><code>urn:oid:2.5.4.42</code></td><td>no</td></tr><tr><td><code>sn</code></td><td><code>urn:oid:2.5.4.4</code></td><td>no</td></tr><tr><td><code>eduPersonAffiliation</code></td><td><code>urn:oid:1.3.6.1.4.1.5923.1.1.1.1</code></td><td>no</td></tr></tbody></table>
+<summary>Example of edited <code>relying-party.xml</code></summary>
 
 
 
-    In the context of Shibboleth, there are various ways to configure an IdP to send attributes with the specific names required by Cusna. The following steps outline a procedure tailored for communication with Cusna, ensuring that this customization does not interfere with the IdP's communication with other configured Service Providers (SPs).
+</details>
 
-    1.  Add the following definitions to your `attribute-resolver.xml` file:
+#### SAML attribute mapping
 
+1. Make sure to configure the attributes names as per the below table in order to make them readable by Cusna.\
+   \
+   Please note that the attribute naming matches with the SAML2 standard.
 
+<table><thead><tr><th width="220.03558349609375">Internal Attribute</th><th width="377.41510009765625">SAML Attribute Name</th><th>Required</th></tr></thead><tbody><tr><td><code>mail</code></td><td><code>urn:oid:0.9.2342.19200300.100.1.3</code></td><td>yes</td></tr><tr><td><code>givenName</code></td><td><code>urn:oid:2.5.4.42</code></td><td>no</td></tr><tr><td><code>sn</code></td><td><code>urn:oid:2.5.4.4</code></td><td>no</td></tr><tr><td><code>eduPersonAffiliation</code></td><td><code>urn:oid:1.3.6.1.4.1.5923.1.1.1.1</code></td><td>no</td></tr></tbody></table>
 
-        ```xml
-        <?xml version="1.0" encoding="UTF-8"?>
-        <AttributeResolver xmlns="urn:mace:shibboleth:2.0:resolver"
-                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                           xsi:schemaLocation="urn:mace:shibboleth:2.0:resolver resolver.xsd">
+In the context of Shibboleth, there are various ways to configure an IdP to send attributes with the specific names required by Cusna. The following steps outline a procedure tailored for communication with Cusna, ensuring that this customization does not interfere with the IdP's communication with other configured Service Providers (SPs).
 
-            <!-- 
-                other definitions ...
-            -->
+**Step 1.**
 
-            <!-- EMAIL -->
-            <AttributeDefinition id="cusnaEmail" xsi:type="ScriptedAttribute">
-                <Dependency ref="mail"/>
-                <Script><![CDATA[ cusnaEmail = mail.getValues(); ]]></Script>
-                <AttributeEncoder xsi:type="SAML2String"
-                    name="urn:oid:0.9.2342.19200300.100.1.3"
-                    nameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    friendlyName="email"/>
-            </AttributeDefinition>
+Add the following definitions to your `attribute-resolver.xml` file that can be found at the following location:\
+`%{idp.home}/conf/metadata-providers.xml`&#x20;
 
-            <!-- FIRST NAME -->
-            <AttributeDefinition id="cusnaGivenName" xsi:type="ScriptedAttribute">
-                <Dependency ref="givenName"/>
-                <Script><![CDATA[ cusnaGivenName = givenName.getValues(); ]]></Script>
-                <AttributeEncoder xsi:type="SAML2String"
-                    name="urn:oid:2.5.4.42"
-                    nameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    friendlyName="firstName"/>
-            </AttributeDefinition>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<AttributeResolver xmlns="urn:mace:shibboleth:2.0:resolver"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="urn:mace:shibboleth:2.0:resolver resolver.xsd">
 
-            <!-- LAST NAME -->
-            <AttributeDefinition id="cusnaSn" xsi:type="ScriptedAttribute">
-                <Dependency ref="sn"/>
-                <Script><![CDATA[ cusnaSn = sn.getValues(); ]]></Script>
-                <AttributeEncoder xsi:type="SAML2String"
-                    name="urn:oid:2.5.4.4"
-                    nameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    friendlyName="lastName"/>
-            </AttributeDefinition>
+    <!-- 
+        other definitions ...
+    -->
 
-            <!-- GROUP IDS -->
-            <AttributeDefinition id="cusnaGroups" xsi:type="ScriptedAttribute">
-                <Dependency ref="eduPersonAffiliation"/>
-                <Script><![CDATA[ cusnaGroups = eduPersonAffiliation.getValues(); ]]></Script>
-                <AttributeEncoder xsi:type="SAML2String"
-                    name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1"
-                    nameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    friendlyName="groupIds"/>
-            </AttributeDefinition>
+    <!-- EMAIL -->
+    <AttributeDefinition id="cusnaEmail" xsi:type="ScriptedAttribute">
+        <Dependency ref="mail"/>
+        <Script><![CDATA[ cusnaEmail = mail.getValues(); ]]></Script>
+        <AttributeEncoder xsi:type="SAML2String"
+            name="urn:oid:0.9.2342.19200300.100.1.3"
+            nameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+            friendlyName="email"/>
+    </AttributeDefinition>
 
-        </AttributeResolver>
-        ```
+    <!-- FIRST NAME -->
+    <AttributeDefinition id="cusnaGivenName" xsi:type="ScriptedAttribute">
+        <Dependency ref="givenName"/>
+        <Script><![CDATA[ cusnaGivenName = givenName.getValues(); ]]></Script>
+        <AttributeEncoder xsi:type="SAML2String"
+            name="urn:oid:2.5.4.42"
+            nameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+            friendlyName="firstName"/>
+    </AttributeDefinition>
 
+    <!-- LAST NAME -->
+    <AttributeDefinition id="cusnaSn" xsi:type="ScriptedAttribute">
+        <Dependency ref="sn"/>
+        <Script><![CDATA[ cusnaSn = sn.getValues(); ]]></Script>
+        <AttributeEncoder xsi:type="SAML2String"
+            name="urn:oid:2.5.4.4"
+            nameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+            friendlyName="lastName"/>
+    </AttributeDefinition>
 
-    2.  Add the following filter policy to your `attribute-filter.xml` file:\
+    <!-- GROUP IDS -->
+    <AttributeDefinition id="cusnaGroups" xsi:type="ScriptedAttribute">
+        <Dependency ref="eduPersonAffiliation"/>
+        <Script><![CDATA[ cusnaGroups = eduPersonAffiliation.getValues(); ]]></Script>
+        <AttributeEncoder xsi:type="SAML2String"
+            name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1"
+            nameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+            friendlyName="groupIds"/>
+    </AttributeDefinition>
 
+</AttributeResolver>
+```
 
-        ```xml
-        <?xml version="1.0" encoding="UTF-8"?>
-        <AttributeFilterPolicyGroup xmlns="urn:mace:shibboleth:2.0:afp"
-                                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                    xsi:schemaLocation="urn:mace:shibboleth:2.0:afp afp.xsd">
+<details>
 
-            <!-- 
-                other filter policies ...
-            -->
-            
-            <AttributeFilterPolicy id="ReleaseCusnaMappedAttributes">
-                <PolicyRequirementRule xsi:type="Requester" value="%{entityID}"/>
-
-                <AttributeRule attributeID="cusnaEmail">
-                    <PermitValueRule xsi:type="ANY"/>
-                </AttributeRule>
-                <AttributeRule attributeID="cusnaGivenName">
-                    <PermitValueRule xsi:type="ANY"/>
-                </AttributeRule>
-                <AttributeRule attributeID="cusnaSn">
-                    <PermitValueRule xsi:type="ANY"/>
-                </AttributeRule>
-                <AttributeRule attributeID="cusnaGroups">
-                    <PermitValueRule xsi:type="ANY"/>
-                </AttributeRule>
-            </AttributeFilterPolicy>
-
-        </AttributeFilterPolicyGroup>
-        ```
+<summary>Example of edited <code>attribute-resolver.xml</code></summary>
 
 
 
-        {% hint style="info" %}
-        Make sure the `value` in `PolicyRequirementRule` matches the **entityID** value specified in Cusna metadata XML file **cusna-metadata.xml** (eg.: cusna-14251113262c18bccc2478a05815fa02724db3c619d29d614d22f38e1e7f154b).
-        {% endhint %}
+</details>
 
-        \
-        This configuration ensures that **only Cusna SP** receives the required attributes with the specified names, without affecting other SPs configured on your IdP.\
+**Step 2**
+
+Add the following filter policy to your `attribute-filter.xml` file that can be found at the following location:\
+`%{idp.home}/conf/metadata-providers.xml`&#x20;
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<AttributeFilterPolicyGroup xmlns="urn:mace:shibboleth:2.0:afp"
+                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xsi:schemaLocation="urn:mace:shibboleth:2.0:afp afp.xsd">
+
+    <!-- 
+        other filter policies ...
+    -->
+    
+    <AttributeFilterPolicy id="ReleaseCusnaMappedAttributes">
+        <PolicyRequirementRule xsi:type="Requester" value="%{entityID}"/>
+
+        <AttributeRule attributeID="cusnaEmail">
+            <PermitValueRule xsi:type="ANY"/>
+        </AttributeRule>
+        <AttributeRule attributeID="cusnaGivenName">
+            <PermitValueRule xsi:type="ANY"/>
+        </AttributeRule>
+        <AttributeRule attributeID="cusnaSn">
+            <PermitValueRule xsi:type="ANY"/>
+        </AttributeRule>
+        <AttributeRule attributeID="cusnaGroups">
+            <PermitValueRule xsi:type="ANY"/>
+        </AttributeRule>
+    </AttributeFilterPolicy>
+
+</AttributeFilterPolicyGroup>
+```
+
+{% hint style="info" %}
+Make sure the `value` in `PolicyRequirementRule` matches the **entityID** value specified in Cusna metadata XML file **cusna-metadata.xml** (eg.: cusna-14251113262c18bccc2478a05815fa02724db3c619d29d614d22f38e1e7f154b).
+{% endhint %}
+
+<details>
+
+<summary>Example of edited <code>attribute-filter.xml</code></summary>
+
+
+
+</details>
+
+\
+This configuration ensures that **only Cusna SP** receives the required attributes with the specified names, without affecting other SPs configured on your IdP.\
 
 
 At this point the integration is correctly configured and users can login using their own credentials.
