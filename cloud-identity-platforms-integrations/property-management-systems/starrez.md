@@ -21,7 +21,13 @@ Get your REST API Connection Settings:
    \
    ![](../../.gitbook/assets/image.png)\
 
-4. Refer to the API documentation to find your **RestAPI URL** ([https://support.starrez.com/hc/en-us/articles/360056850292-StarRez-REST-2-0-Web-Services-API-Guide](https://support.starrez.com/hc/en-us/articles/360056850292-StarRez-REST-2-0-Web-Services-API-Guide))
+4.  Refer to the API documentation to find your **Rest API URL** ([https://support.starrez.com/hc/en-us/articles/360056850292-StarRez-REST-2-0-Web-Services-API-Guide](https://support.starrez.com/hc/en-us/articles/360056850292-StarRez-REST-2-0-Web-Services-API-Guide))\
+    Your StarRez system is usually hosted on a URL such as  format `https://yourinstitution.starrezhousing.com` or similar.\
+    The REST API services typically reside under a `/StarRezREST/services/` path, so the Rest API URL could be something like:
+
+    `https://yourinstitution.starrezhousing.com/StarRezREST/services/`
+
+
 5. Keep a record of these credentials and the RestAPI URL
 
 
