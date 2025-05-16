@@ -30,7 +30,7 @@ Next, go to **API & Services** and open **OAuth consent screen** to configure th
 
 Click **Get Started** to launch the setup wizard.
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (2) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 1. In the first screen **App Information**, enter a **Name** for your App (e.g. "Cusna") and select a support email.
 2. In the second step, **Audience**, select **Internal** and click Next.\
@@ -44,7 +44,7 @@ Click **Get Started** to launch the setup wizard.
 
 On the left sidebar, select **Branding**.&#x20;
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="132"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="132"><figcaption></figcaption></figure></div>
 
 Fill in the required data about privacy policy and terms, app logo. Scroll the page until you find the  **Authorized domains** section and enter your company domain ("company.com")
 

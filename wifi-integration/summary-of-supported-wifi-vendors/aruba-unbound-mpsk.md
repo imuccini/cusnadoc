@@ -1,8 +1,6 @@
 # Aruba - Unbound MPSK
 
 {% hint style="info" %}
-This is a Beta feature only for partners and customer with access to the Beta Program.
-
 Requires AP with Firmware **AOS 10.4.x** or above
 {% endhint %}
 
@@ -14,27 +12,28 @@ Traditional RADIUS-based iPSK relies on MAC authentication, requiring each devic
 
 ## Aruba Central Setup
 
-Each **Location** in Cusna is associated to a **WLAN** in the Aruba Central dashboard.&#x20;
+To get Start with Cusna, you need to initially configure properly a **WLAN** on your Aruba Central dashboard. You can create multiple WLANs and associated them to different **Networks** in Cusna.\
+
 
 1. Setup a **Group** for your project, configuring it with **ArubaOS 10** architecture\
-   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png>)\
+   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png>)\
 
 2. Select the **Config** wheel to start configuring the Group\
-   <img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">\
+   <img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">\
 
 3. Under **Security Tab** add the Radius Authentication Server:\
    Enter a **Name**, such as _CusnaRADIUS_\
-   IP Address: \<will be provided by Cloud4Wi>\
-   Secret: \<will be provided by Cloud4Wi>\
+   IP Address: \<can be retrieved in the Cusna Dashboard>\
+   Secret: \<can be retrieved in the Cusna Dashboard>\
    Auth Por: 1812\
    Accounting Port: 1813\
    ![](<../../.gitbook/assets/image (9) (1).png>)\
 
 4. Next, select the **WLAN** tab and then the Plus sign next to add SSID\
-   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png>)\
+   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png>)\
 
-5. There are many parameters that can be customized.  For now, we will create a simple WLAN network. Type in a **SSID** name (ESSID) and click Next
-6. On the next scree, select **Static** on **Client VLAN Assignment**, enter a VLAN  and click Next
+5. There are many parameters that can be customized at your discretion.  For now, we will create a simple WLAN network. Type in a **SSID** name (ESSID) and click Next
+6. On the next screen, select **Static** on **Client VLAN Assignment**, enter a **VLAN**  - based on your specific deployment setup - and click **Next**
 7.  In the **Security** tab, under **Key Management**, select **MPSK-AES** and then pull down on the **Primary Server** setting to select the Radius Server you configured above \
 
 
@@ -47,6 +46,10 @@ Each **Location** in Cusna is associated to a **WLAN** in the Aruba Central dash
 
     <figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+The Aruba Central dashboard currently does not permit manual enabling of WLAN for Unbound MPSK. However, Cusna will automatically update the WLAN configuration once you link your Cusna and Aruba Central accounts using the steps below.
+{% endhint %}
+
 
 
 ## Cusna setup
@@ -56,7 +59,7 @@ To connect Cusna to your Aruba Central account, you need to generate an API Key 
 1. At the **Global** level, select **Organization** and then **Platform Integration**
 2. Chose [**REST API**](https://app-uswest5.central.arubanetworks.com/frontend/#/APIGATEWAY)\
    ![](<../../.gitbook/assets/image (5) (1) (1).png>)![](<../../.gitbook/assets/image (6) (1) (1).png>)
-3.  In the first tab, make sure to take not of the API hostname for  your account, such as "[apigw-uswest5.central.arubanetworks.com](https://apigw-uswest5.central.arubanetworks.com)" (take only the hostname, without "https://")\
+3.  In the first tab, make sure to take note of the **API hostname** for  your account, such as "[apigw-uswest5.central.arubanetworks.com](https://apigw-uswest5.central.arubanetworks.com)" (take only the hostname, without "https://")\
 
 
     <div align="left"><figure><img src="../../.gitbook/assets/image (11).png" alt="" width="375"><figcaption></figcaption></figure></div>
@@ -65,7 +68,7 @@ To connect Cusna to your Aruba Central account, you need to generate an API Key 
 
 
     <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
-6.  Then, in the Token List table, click Download Token and Copy the **Access token** and **Refresh Token** (It is good for 2 hours)\
+6.  Then, in the Token List table, click **Download Token** and Copy the **Access token** and **Refresh Token** (It is good for 2 hours)\
 
 
     <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
@@ -102,12 +105,6 @@ To re-enable it, go to Cusna dashboard, **Setup** > **Integration** and click **
 
 
 On the next dialog select your **Group** and **SSID** and click Setup. \
-![](<../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 {% endhint %}
-
-
-
-
-
-
 
