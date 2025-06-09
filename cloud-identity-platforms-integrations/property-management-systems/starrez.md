@@ -15,11 +15,11 @@ Get your REST API Connection Settings:
 1. Log in to StarRez and click on **Account** in the top left > Account
 2. **Web Service** **Tokens** > **Create New**\
    \
-   ![](<../../.gitbook/assets/image (1).png>)\
+   ![](<../../.gitbook/assets/image (1) (1).png>)\
 
 3. Enter a Name/description for the Token and set the **Expiry Date**. Make sure you copy the token from this screen. It cannot be viewed after you close this window and is not recoverable. \
    \
-   ![](../../.gitbook/assets/image.png)\
+   ![](<../../.gitbook/assets/image (3).png>)\
 
 4.  Refer to the API documentation to find your **Rest API URL** ([https://support.starrez.com/hc/en-us/articles/360056850292-StarRez-REST-2-0-Web-Services-API-Guide](https://support.starrez.com/hc/en-us/articles/360056850292-StarRez-REST-2-0-Web-Services-API-Guide))\
     Your StarRez system is usually hosted on a URL such as  format `https://yourinstitution.starrezhousing.com` or similar.\

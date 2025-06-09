@@ -17,13 +17,13 @@ Enter the following data:
 * **Client Token**
 * **Access Token**
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click **Setup**.&#x20;
 
 A new windows will open and prompt you to login with your **Cloudbeds** account and then authorize the integration by clicking **Allow Access**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 If successful, a message informs you that you can close the window.
 
@@ -31,7 +31,7 @@ If successful, a message informs you that you can close the window.
 
 Going back to the dashboard you'll that the integration is complete.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Setting up networks for each Hotel
 
@@ -45,7 +45,7 @@ When you create a Network, you need to select the Hotel form a dropdown menu.
 
 Go to **Setup**, **Onboarding** and enable the toggle next to Cloudbeds
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

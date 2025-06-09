@@ -21,18 +21,29 @@ If their email matches with a member in your Microsoft account, the user will re
 
 3. From **Active Directory** (now Microsoft **Entra ID)** in the Azure Portal, and select **App Registration**. Click on the app you just created
 4. From the **Overview** page, copy the **Application** (**Client) ID** and the **Tenant ID**
-5. Click **API Permissions** and select **+ Add Permission**
-6.  **Select Microsoft Graph** and click on **Application Permissions**\
+5.  Click Authorization and select **+ Add a platform** and select **Web**.\
+    Enter the following **Redirect URI**:\
+    `https://www.cusna.io/oauth`\
+    \
+
+
+    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+6. Click **API Permissions** and select **+ Add Permission**
+7.  **Select Microsoft Graph** and click on **Application Permissions**\
     \
 
 
     <figure><img src="../../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
-7. Select the permissions
+8. Select the permissions
    1. _Group.Read.All_
    2. _User.Read.All_
-8. Click **Grant admin consent for .... \<yourComapnyName>**
-9. Click on **Certificates and Secrets**, click on  + **New Client Secret**. Enter a name and click Add.
-10. Copy the value "_**Value**_" of the secret (not the Secret ID). This value will be shown only once.\
+9. Click **Grant admin consent for .... \<yourComapnyName>**
+10. If not already enabled, also enable the User.Read Delegated permission. Click **+ Add a permission** again, select Delegated Permission and serach and enable _User.Read_
+11. You final Configured permissions should look like the following screenshot
+
+    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+12. Click on **Certificates and Secrets**, click on  + **New Client Secret**. Enter a name and click Add.
+13. Copy the value "_**Value**_" of the secret (not the Secret ID). This value will be shown only once.\
 
 
 

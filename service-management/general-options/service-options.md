@@ -48,11 +48,11 @@ You can defined Group based automatic suspension policies on specific [Groups](.
 
 The option **Suspend after set number of days form activation** allows administrators to specify the number of days after activation when an account will be automatically suspended.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 The option **Suspend yearly on selected date** allows to suspend all Accounts automatically every year of a specific date.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Service termination notice
 
