@@ -44,7 +44,7 @@ Click **Get Started** to launch the setup wizard.
 
 On the left sidebar, select **Branding**.&#x20;
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="132"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="132"><figcaption></figcaption></figure></div>
 
 Fill in the required data about privacy policy and terms, app logo. Scroll the page until you find the  **Authorized domains** section and enter your company domain ("company.com")
 

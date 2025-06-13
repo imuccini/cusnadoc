@@ -31,7 +31,7 @@ If successful, a message informs you that you can close the window.
 
 Going back to the dashboard you'll that the integration is complete.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Setting up networks for each Hotel
 

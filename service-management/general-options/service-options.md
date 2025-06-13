@@ -52,7 +52,7 @@ The option **Suspend after set number of days form activation** allows administr
 
 The option **Suspend yearly on selected date** allows to suspend all Accounts automatically every year of a specific date.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Service termination notice
 

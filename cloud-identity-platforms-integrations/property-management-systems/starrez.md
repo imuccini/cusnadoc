@@ -13,7 +13,7 @@ Get your REST API Connection Settings:
 1. Log in to StarRez and click on **Account** in the top left > Account
 2. **Web Service** **Tokens** > **Create New**\
    \
-   ![](<../../.gitbook/assets/image (1) (1).png>)\
+   ![](<../../.gitbook/assets/image (1) (1) (1).png>)\
 
 3. Enter a Name/description for the Token and set the **Expiry Date**. Make sure you copy the token from this screen. It cannot be viewed after you close this window and is not recoverable. \
    \
@@ -36,10 +36,13 @@ Go to Integrations and click **New** in the Integration card, then select **Star
 
 Enter the following data:
 
-* RestAPI URL
-* Access token
+* **RestAPI URL**
+* **Access token**
+*   **CheckOut Report Name** (optional):
 
-<figure><img src="../../.gitbook/assets/image (372).png" alt=""><figcaption></figcaption></figure>
+    This is a custom report name that allows Cusna to retrieve daily the list of users who have checked out, in order to suspend their WiFi service.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Click **Setup**.
 

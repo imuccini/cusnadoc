@@ -27,7 +27,7 @@ If their email matches with a member in your Microsoft account, the user will re
     \
 
 
-    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 6. Click **API Permissions** and select **+ Add Permission**
 7.  **Select Microsoft Graph** and click on **Application Permissions**\
     \
