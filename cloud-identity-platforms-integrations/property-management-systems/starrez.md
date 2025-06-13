@@ -23,9 +23,9 @@ Get your REST API Connection Settings:
 
 4.  Refer to the API documentation to find your **Rest API URL** ([https://support.starrez.com/hc/en-us/articles/360056850292-StarRez-REST-2-0-Web-Services-API-Guide](https://support.starrez.com/hc/en-us/articles/360056850292-StarRez-REST-2-0-Web-Services-API-Guide))\
     Your StarRez system is usually hosted on a URL such as  format `https://yourinstitution.starrezhousing.com` or similar.\
-    The REST API services typically reside under a `/StarRezREST/services/` path, so the Rest API URL could be something like:
+    The REST API services typically reside under a `/StarRezREST` path, so the Rest API URL could be something like:
 
-    `https://yourinstitution.starrezhousing.com/StarRezREST/services/`
+    `https://yourinstitution.starrezhousing.com/StarRezREST`
 
 
 5. Keep a record of these credentials and the RestAPI URL
@@ -34,6 +34,25 @@ Get your REST API Connection Settings:
 
 ### Setting up Cusna
 
+Go to Integrations and click **New** in the Integration card, then select **StarRez**.
+
+Enter the following data:
+
+* RestAPI URL
+* Access token
+
+<figure><img src="../../.gitbook/assets/image (372).png" alt=""><figcaption></figcaption></figure>
+
+Click **Setup**.
+
+{% hint style="info" %}
+If the data provided is not correct, either the URL or the Access Token, you'll receive an error notification
+{% endhint %}
 
 
-Comng soon...
+
+### Usign StarRez
+
+In order to enable StarRez to let user register on the WiFi Portal, go to **Setup**, **Onboarding** and  enable on StarRez on the **Access Control** section.
+
+<figure><img src="../../.gitbook/assets/image (373).png" alt=""><figcaption></figcaption></figure>
