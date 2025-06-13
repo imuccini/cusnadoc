@@ -1,12 +1,10 @@
 # StarRez
 
 {% hint style="info" %}
-his is a Beta feature only for partners and customer with access to the Beta ProgramT
+This is a Beta feature only for partners and customer with access to the Beta Program
 {% endhint %}
 
-**StarRez** integration enables guests to self-onboard by identifying themselves via **with their StarRez account** from the WiFi portal. If their account is valid, they receive a personal WiFi Passphrase.
-
-
+**StarRez** integration allows guests to self-onboard simply using their email address via the WiFi portal. If the email is linked to an active resident in StarRez, they receive a magic link granting access to the WiFi Portal where they can retrieve WiFi access details.
 
 ### Get started with your connector <a href="#get-started-with-your-connector" id="get-started-with-your-connector"></a>
 
@@ -51,7 +49,7 @@ If the data provided is not correct, either the URL or the Access Token, you'll 
 
 
 
-### Usign StarRez
+### Enabling StarRez
 
 In order to enable StarRez to let user register on the WiFi Portal, go to **Setup**, **Onboarding** and  enable on StarRez on the **Access Control** section.
 
