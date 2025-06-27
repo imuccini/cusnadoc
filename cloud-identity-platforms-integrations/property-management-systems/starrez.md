@@ -42,7 +42,9 @@ Enter the following data:
 
     This is a custom report name that allows Cusna to retrieve daily the list of users who have checked out, in order to suspend their WiFi service.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src="../../.gitbook/assets/image (374).png" alt=""><figcaption></figcaption></figure>
 
 Click **Setup**.
 
