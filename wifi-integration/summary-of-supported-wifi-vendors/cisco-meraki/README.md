@@ -17,7 +17,7 @@ All APs in your network must be **Wi-Fi 5 Wave 2** (MR20, MR30H, MR33, MR42, MR4
 Each **Location** in Cusna is associated to a **Network** in the Meraki dashboard.&#x20;
 
 1. Create a Network in Meraki as described in the official [Meraki documentation](https://documentation.meraki.com/General_Administration/Organizations_and_Networks/Creating_and_Deleting_Dashboard_Networks).
-2. Next, you need to create an SSID configured to support iPSK. Navigate to **Wireless** > **Configure** > **SSIDs**, enable an SSID from the list and rename it with your desired network name, e.g. "_Tenant WiFi_". Click **Save Changes** at the bottom of the page.
+2. Next, you need to create an SSID configured to support iPSK. Navigate to **Wireless** > **Configure** > **SSIDs**, enable an SSID from the list and rename it with your desired network name, e.g. "_Tenant WiFi" (note: you cannot change the SSID name once you linked it to a Cusn aNetwork)_. Click **Save Changes** at the bottom of the page.
 3. On the desired SSID, click "**edit settings**" link to navigate to the **Access Control** page for this SSID.
 4. On the Access control Page, Select **Identity PSK without RADIUS** under **Security** and click on **Add an Identity PSK**
 5.  Configure a name and passphrase; select a group policy.
