@@ -86,7 +86,7 @@ If your account is configured to use [Shared PSK](groups.md#shared-vs-individual
 
 The **Automatic Account Suspension** dropdown allows you to choose options for automatically suspending accounts in the Group based on predefined rules.
 
-<div align="left"><figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 * **Suspend on a Specific Date**: Allows you to suspend all accounts in the group on a set date you specify when choosing this option.
 * **Suspend Yearly on a Selected Date**: Suspends all accounts in the group on a specified date each year. When selected, you can choose the specific day of the year for suspension.

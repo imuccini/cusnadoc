@@ -27,7 +27,7 @@ If their email matches with a member in your Microsoft account, the user will re
     \
 
 
-    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 6. Click **API Permissions** and select **+ Add Permission**
 7.  **Select Microsoft Graph** and click on **Application Permissions**\
     \
@@ -41,7 +41,7 @@ If their email matches with a member in your Microsoft account, the user will re
 10. If not already enabled, also enable the User.Read Delegated permission. Click **+ Add a permission** again, select Delegated Permission and serach and enable _User.Read_
 11. You final Configured permissions should look like the following screenshot
 
-    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 12. Click on **Certificates and Secrets**, click on  + **New Client Secret**. Enter a name and click Add.
 13. Copy the value "_**Value**_" of the secret (not the Secret ID). This value will be shown only once.\
 

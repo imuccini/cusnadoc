@@ -16,10 +16,10 @@ To get Start with Cusna, you need to initially configure properly a **WLAN** on 
 
 
 1. Setup a **Group** for your project, configuring it with **ArubaOS 10** architecture\
-   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png>)\
+   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png>)\
 
 2. Select the **Config** wheel to start configuring the Group\
-   <img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">\
+   <img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">\
 
 3. Under **Security Tab** add the Radius Authentication Server:\
    Enter a **Name**, such as _CusnaRADIUS_\
@@ -30,7 +30,7 @@ To get Start with Cusna, you need to initially configure properly a **WLAN** on 
    ![](<../../.gitbook/assets/image (9) (1).png>)\
 
 4. Next, select the **WLAN** tab and then the Plus sign next to add SSID\
-   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png>)\
+   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)\
 
 5. There are many parameters that can be customized at your discretion.  For now, we will create a simple WLAN network. Type in a **SSID** name (ESSID) and click Next
 6. On the next screen, select **Static** on **Client VLAN Assignment**, enter a **VLAN**  - based on your specific deployment setup - and click **Next**
@@ -105,6 +105,6 @@ To re-enable it, go to Cusna dashboard, **Setup** > **Integration** and click **
 
 
 On the next dialog select your **Group** and **SSID** and click Setup. \
-![](<../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 {% endhint %}
 

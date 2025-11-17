@@ -13,7 +13,7 @@ Get your REST API Connection Settings:
 1. Log in to StarRez and click on **Account** in the top left > Account
 2. **Web Service** **Tokens** > **Create New**\
    \
-   ![](<../../.gitbook/assets/image (1) (1) (1).png>)\
+   ![](<../../.gitbook/assets/image (1) (1) (1) (1).png>)\
 
 3. Enter a Name/description for the Token and set the **Expiry Date**. Make sure you copy the token from this screen. It cannot be viewed after you close this window and is not recoverable. \
    \

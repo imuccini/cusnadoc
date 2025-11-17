@@ -30,10 +30,14 @@ Each **Location** in Cusna is associated to a **Network** in the Meraki dashboar
 3. On the desired SSID, click "**edit settings**" link to navigate to the **Access Control** page for this SSID.
 4. On the Access control Page, Select **Identity PSK with RADIUS** under **Security** and in the dropdown select **Easy PSK**\
    \
-   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)\
+   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)\
 
 5. Set **Wi-Fi Personal Network (WPN)** to **Enabled**
 6. Click **Save changes** on the bottom of the page.
+
+{% hint style="info" %}
+You'll have to come back to this page once you have integrated Cusna with your Meraki account to configure the RADIUS Servers.
+{% endhint %}
 
 
 
@@ -81,7 +85,19 @@ Once the key is generated from the Cisco Meraki dashboard:
 * The Organization menu will load the list of Meraki Organizations enabled on your API Kay; select the Organization that you want to link to your Cusna account.&#x20;
 * Click **Save**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+Once saved, you will see a link that open a popup showing the RADIUS parameters to configure in the Meraki dashboard.
+
+<div align="left"><figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+Configure RADIUS server in the Meraki dashboard.
+
+1. Go back to the Meraki dashboard and open the **Access Control** page for the SSID you had configured before
+2. Find the RADIUS section and expand it.
+3. Add
+
+
 
 Next, you need to setup at least one **Network Policy**.  Once you have set up the Meraki integration, the **Network Policy** section appears.
 
@@ -106,7 +122,7 @@ However, when the student connects their wireless devices to other networks on c
 
 
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Wired Devices Onboarding
 
@@ -121,5 +137,5 @@ Non-headless devices, once connected to the ETH port, can be blocked and prompte
 3. Give a name to the device and approve it.
 4. Disconnect and reconnect the cable device to the ETH port
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -23,7 +23,7 @@ Click **Setup**.&#x20;
 
 A new windows will open and prompt you to login with your **Cloudbeds** account and then authorize the integration by clicking **Allow Access**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 If successful, a message informs you that you can close the window.
 
@@ -31,7 +31,7 @@ If successful, a message informs you that you can close the window.
 
 Going back to the dashboard you'll that the integration is complete.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Setting up networks for each Hotel
 

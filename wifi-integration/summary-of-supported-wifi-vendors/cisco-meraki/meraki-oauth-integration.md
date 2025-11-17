@@ -14,10 +14,10 @@ Check the toggle **Connect via oAuth**. The button **Connect with Meraki** appea
 
 Click the Connect with Meraki button, to get redirected to the Meraki Authorization page.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the **Select an organization** dropdown, select the Organization you want to link to your Cusna accoutn and click **Allow**.
 
 You'll be redirected to the Cusna dashboard. Initially you may see the button with the label "pending",  while the integration gets finalized.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
