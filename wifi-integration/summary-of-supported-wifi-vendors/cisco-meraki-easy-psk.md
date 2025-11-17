@@ -1,9 +1,5 @@
 # Cisco Meraki Easy PSK
 
-{% hint style="info" %}
-This is a Beta feature only for partners and customer with access to the Beta Program
-{% endhint %}
-
 Traditional RADIUS-based iPSK relies on MAC authentication, requiring each device to be pre-onboarded individually to collect its MAC address. While onboarding through a captive portal can simplify the process for non-headless devices, it still requires manually collecting and adding the MAC addresses of headless devices (such as smart TVs, printers, smartwatches, etc.), which can be challenging. Additionally, the MAC addresses of many personal devices may change over time due to the aggressive MAC randomization and rotation policies in modern operating systems.
 
 
