@@ -63,12 +63,12 @@ You need these values to setup the SAML authentication into your IdP service.
     <figure><img src="../.gitbook/assets/mceclip5.png" alt=""><figcaption></figcaption></figure>
 * Click **Edit** on the "**Attributes & Claims**" card. Default values are usually the correct ones, but make sure that :&#x20;
   1. claim name **Unique User Identifier** matches source attribute **user.userpincipalname**
-  2. claim name **groups** matches source attribute **user.groups \[All]**\
-     if you don't have this entry, click on the button "**+ Add a group claim**" and select **All groups** in the Group Claims dialog.
-  3. claim name **emailaddress** matches source attribute **user.mail**
-  4. claim name **givenname** matches source attribute **user.givenname**
-  5. claim name **name** matches source attribute **user.userprincipalname**
-  6.  claim name **surname** matches source attribute **user.surname**\
+  2. claim name **emailaddress** matches source attribute **user.mail**
+  3. claim name **givenname** matches source attribute **user.givenname**
+  4. claim name **name** matches source attribute **user.userprincipalname**
+  5. claim name **surname** matches source attribute **user.surname**
+  6.  claim name **groups** matches source attribute **user.groups \[All]**\
+      if you don't have this entry, click on the button "**+ Add a group claim**" and select **All groups** in the Group Claims dialog and make sure the **Source Attribute** field is set to **Group ID**\
       <br>
 
       <figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
