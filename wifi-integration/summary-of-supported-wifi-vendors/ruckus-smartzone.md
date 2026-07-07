@@ -13,8 +13,7 @@ Each **Network** in Cusna is associated to a **Zone** and a specific **WLAN** in
 3. Complete the **General Options** section of the screen
 4.  In the **Authentication Options** section of the screen, be sure that the default selection of **Open** is selected.
 
-    1.  In the **Encryptions Options** section of the screen, you must select "**WPA2**," which expands the section as follows:\
-
+    1.  In the **Encryptions Options** section of the screen, you must select "**WPA2**," which expands the section as follows:<br>
 
         <figure><img src="../../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
     2. The Algorithm field must be **AES**, which is the default.
@@ -29,8 +28,7 @@ Each **Network** in Cusna is associated to a **Zone** and a specific **WLAN** in
     * For DPSK Type, choose the option that complies with the security policy of your company. The default is Secure DPSK.
     * For DPSK Expiration, use the drop-down menu to select a value that complies with the security policy of your company. The default value is Unlimited.
 
-\
-
+<br>
 
 ## Cusna setup
 

@@ -51,8 +51,7 @@ If you need to support [IoT Devices Authentication](../../../service-management/
 4. Select "None (direct Access)" in the Splash Page section\
    ![](<../../../.gitbook/assets/image (40).png>)
 5.  Finally, expand the **RADIUS** section and add Primary and Secondary RADIUS data for both the **RADIUS servers** and **RADIUS Accounting servers** sections.\
-    The RADIUS data (IP addresses, Ports and Secrets are delivered as part of your onboarding email).\
-
+    The RADIUS data (IP addresses, Ports and Secrets are delivered as part of your onboarding email).<br>
 
     <figure><img src="../../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 

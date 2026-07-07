@@ -26,8 +26,7 @@ Each **Location** in Cusna is associated to a **Network** in the Meraki dashboar
 3. On the desired SSID, click "**edit settings**" link to navigate to the **Access Control** page for this SSID.
 4. On the Access control Page, Select **Identity PSK with RADIUS** under **Security** and in the dropdown select **Easy PSK**\
    \
-   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)\
-
+   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)<br>
 5. Set **Wi-Fi Personal Network (WPN)** to **Enabled**
 6. Click **Save changes** on the bottom of the page.
 
@@ -50,8 +49,7 @@ If you need to support [IoT Devices Authentication](../../service-management/wif
 4. Select "None (direct Access)" in the Splash Page section\
    ![](<../../.gitbook/assets/image (40).png>)
 5.  Finally, expand the **RADIUS** section and add Primary and Secondary RADIUS data for both the **RADIUS servers** and **RADIUS Accounting servers** sections.\
-    The RADIUS data (IP addresses, Ports and Secrets are delivered as part of your onboarding email).\
-
+    The RADIUS data (IP addresses, Ports and Secrets are delivered as part of your onboarding email).<br>
 
     <figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 

@@ -35,8 +35,7 @@ Click **Get Started** to launch the setup wizard.
 1. In the first screen **App Information**, enter a **Name** for your App (e.g. "Cusna") and select a support email.
 2. In the second step, **Audience**, select **Internal** and click Next.\
    \
-   ![](<../../.gitbook/assets/image (3) (1).png>)\
-
+   ![](<../../.gitbook/assets/image (3) (1).png>)<br>
 3. In the second step, **Contact Information**, enter an email address.
 4. Go to the last step to access the terms and **Create** the App,
 

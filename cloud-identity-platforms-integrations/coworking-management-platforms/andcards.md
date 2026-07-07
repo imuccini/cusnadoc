@@ -28,8 +28,7 @@ WiFi access for users with **bookings** is granted via the WiFi portal only for 
 
 ## Andcards setup
 
-Login in your Andcards account as an admin, go to **Product** **Settings**, and select **API Credentials**\
-
+Login in your Andcards account as an admin, go to **Product** **Settings**, and select **API Credentials**<br>
 
 <figure><img src="../../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
 

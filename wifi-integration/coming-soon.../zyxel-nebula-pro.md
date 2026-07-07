@@ -12,13 +12,11 @@ First step, you need to create a Site and add your Device. In general, you would
 
 Then, create an SSID (WiFi network) with DPPSK as an authentication method and fill in a very long complex backup key. \
 Go to **Access point** –> **Configure** –> **SSID Overview** and set **WLAN security** = **DPPSK**\
-\
-
+<br>
 
 ![](<../../.gitbook/assets/image (177).png>)
 
-\
-
+<br>
 
 ## Cusna setup
 

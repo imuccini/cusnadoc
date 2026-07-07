@@ -117,7 +117,7 @@
 
 **09/12/2024**
 
-* [MSP can set a MAX MAU Threshold](broken-reference) on any managed Organization
+* [MSP can set a MAX MAU Threshold](https://app.gitbook.com/s/DvdioCJduzKTpzAv3Sij/msp-operations) on any managed Organization
 * MSP Admin with Owner role will receive an alert via email when any Organization hits the 90% of the MAX MAU Threshold. The same notificaiton appears in the Alerts page
 
 **09/10/2024**

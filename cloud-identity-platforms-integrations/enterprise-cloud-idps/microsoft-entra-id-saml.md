@@ -36,25 +36,21 @@ Keep your Cusna portal open. **DO NOT CLOSE** the Cusna page while setting up th
 {% endhint %}
 
 1. Log in to Microsoft Azure in a new browser tab, click **Enterprise applications** > **New application**.
-2.  Click **Create your own application**, enter a name for the application, select **Integrate any other application you don't find in the gallery (Non-gallery)** and click **Create**.\
-
+2.  Click **Create your own application**, enter a name for the application, select **Integrate any other application you don't find in the gallery (Non-gallery)** and click **Create**.<br>
 
     <div align="left"><figure><img src="../../.gitbook/assets/image (150).png" alt="" width="375"><figcaption></figcaption></figure></div>
-3.  Click **Assign users and group** to define which Users or User groups can login with this application. You can assign individual users or groups of users.\
-
+3.  Click **Assign users and group** to define which Users or User groups can login with this application. You can assign individual users or groups of users.<br>
 
     <figure><img src="../../.gitbook/assets/mceclip3.png" alt=""><figcaption></figcaption></figure>
 
-    Once done with the assignment, go back to the main page of the app.\
-
+    Once done with the assignment, go back to the main page of the app.<br>
 4.  Click **Single sign on** on the sidebar, select **SAML.**\
     The page **Set up Single Sign-On with SAML** appears.\
     \
     Click **Edit** in the "**Basic SAML Configuration**" card.  Enter the **Identifier (Entity ID)** and the **Reply URL** value provided in the Cloud4Wi Dashboard (see top of the page). Click Save.\
     \
     The value will be reflected in the related card.\
-    \
-
+    <br>
 
     <figure><img src="../../.gitbook/assets/mceclip5.png" alt=""><figcaption></figcaption></figure>
 5. Click **Edit** on the "**Attributes & Claims**" card. Default values are usually the correct ones, but make sure that :&#x20;
@@ -65,20 +61,16 @@ Keep your Cusna portal open. **DO NOT CLOSE** the Cusna page while setting up th
    4. claim name **givenname** matches source attribute **user.givenname**
    5. claim name **name** matches source attribute **user.name**
    6.  claim name **surname** matches source attribute **user.surname**\
-       \
-
+       <br>
 
        <figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 6.  Go back to the main screen **Set up Single Sign-On with SAML**. Find in the page the section SAML **Certificates**.  Find the attribute **App Federation Metadata Url** and copy its value in the Cusna setup panel in the filed **Metadata URI** \
-    \
-
+    <br>
 
     <figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
-    In Cusna, click **Save**.\
-
+    In Cusna, click **Save**.<br>
 7.  Ensure all users can sign on without the need to set up separate permissions in Entra ID. \
-    Form the main page of the application,  go to the **Properties** page and select **No** for **Assignment required** and **Yes** to **Visible to users**.\
-
+    Form the main page of the application,  go to the **Properties** page and select **No** for **Assignment required** and **Yes** to **Visible to users**.<br>
 
     <figure><img src="../../.gitbook/assets/mceclip7.png" alt=""><figcaption></figcaption></figure>

@@ -7,8 +7,7 @@ Open the **Setup** menu group and select **General**. This page contains configu
   * Enabling Groups option
   * Enabling Units option
   * Enabling Roaming option
-  * Enabling Secure WiFi options\
-
+  * Enabling Secure WiFi options<br>
 * [Organization details](organization-details.md)
   * Company data
   * General branding

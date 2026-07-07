@@ -7,24 +7,21 @@ First step, you need to create a Site and add your Device ([follow this guide](h
 **Enable PPSK on the site.**
 
 1.  Choose **Provision > Device Configuration > Site Configuration** from the main menu.\
-    \
-
+    <br>
 
     <figure><img src="../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
 2. In the displayed window, select a site from the **Site** drop-down list in the upper left corner.
 3. Choose the **Site Configuration** tab.\
    ![](<../../.gitbook/assets/image (91).png>)
 4. Configure authentication points based on the device type **AP**
-   1.  Choose **AP** > **SSID** from the navigation pane, click **Create**, and configure basic information about an SSID.\
-
+   1.  Choose **AP** > **SSID** from the navigation pane, click **Create**, and configure basic information about an SSID.<br>
 
        <figure><img src="../../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
    2. On the Basic Settings step, enter an name for the SSID. Switch on the **Global DHCP address pool** option.
    3.  On the **Security Authentication** tab, set **Authentication mode** to **Semi-open network**, select **PSK/PPSK/SAE/SAE-PSK**, and set **Key type** to **PPSK**. \
        Then, set **Encryption mode**, **Encryption algorithm** and **Escape policy**. \
        Leave the option **Automatic MAC address binding** disabled.\
-       \
-
+       <br>
 
        <figure><img src="../../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
 

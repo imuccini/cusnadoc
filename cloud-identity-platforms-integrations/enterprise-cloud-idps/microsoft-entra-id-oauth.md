@@ -45,21 +45,37 @@ If their email matches with a member in your Microsoft account, the user will re
 12. You final Configured permissions should look like the following screenshot
 
     <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
-13. Click on **Certificates and Secrets**, click on  + **New Client Secret**. Enter a name and click Add.
-14. Copy the value "_**Value**_" of the secret (not the Secret ID). This value will be shown only once.<br>
+13. Click on **Certificates and Secrets**, click on  + **New Client Secret**. Enter a name, select an expiration period (e.g. 24 months) and click Add.
+14. Copy the value "_**Value**_" of the secret (not the Secret ID). This value will be shown only once.\
+    Note that the secret will expire at the selected time, and you'll need to go back to this cofniguration, generate a new Secret and update it in the Cusna integration<br>
 
 
 
 ### Cusna Setup
 
-Go to Integrations and click **New** in the Integration card. Select **Microsoft**.
+Go to **Integrations** and click **New** in the Integration card. Select **Microsoft**.
 
 Enter the **Client ID**, **Secret** and **Tenant** ID of your Microsoft App. Pick the default **VLAN** that will be assigned to all authorized members.
 
-<figure><img src="../../.gitbook/assets/image (230).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (375).png" alt=""><figcaption></figcaption></figure>
 
 Click **Setup**.
 
 <figure><img src="../../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
 You can click **Edit** to change the parameters of the integration at any time.
+
+
+
+### Next steps
+
+Once you setup the integration, you need to enable it as an onboarding method. Go to Setup > Onboarding. You'll find on top of the page a card to configure the option of the IdP you've just created.
+
+<figure><img src="../../.gitbook/assets/image (376).png" alt=""><figcaption></figcaption></figure>
+
+Enable the toggle on the Microsoft Entra ID title to enable the integration.
+
+* **Display SSO button**: publish the button on the WiFi portal that redirects the user to the Microsoft login page. You can customize the label of the button
+* **Passwordless sign up**: enable the option for users to sign up simply using their email address. Upon entering their email address, Cusna verifies if the email exists on the Entra ID directly. If it does, the user receives a link via email to verify the ownership of the email and logs the user directly into his portal.
+* **Group mapping**: check the dedicated [group mapping articles](https://app.gitbook.com/s/DvdioCJduzKTpzAv3Sij/cloud-identity-platforms-integrations) to learn how you can assign different network policies to different groups of users
+

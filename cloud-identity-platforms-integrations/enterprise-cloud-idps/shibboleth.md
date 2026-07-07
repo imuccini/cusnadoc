@@ -332,8 +332,7 @@ This procedure will ensure that the configuration for Cusna does not interfere w
 
 
 
-*   Add the following definitions to this file to map the required attributes:\
-
+*   Add the following definitions to this file to map the required attributes:<br>
 
     ```xml
     <!-- EMAIL -->
@@ -438,16 +437,14 @@ This procedure will ensure that the configuration for Cusna does not interfere w
 
 </details>
 
-*   Define **Attribute Release Policy** in `attribute-filter.xml` \
-
+*   Define **Attribute Release Policy** in `attribute-filter.xml` <br>
 
     Next, configure the `attribute-filter.xml` file to ensure that only the attributes necessary for Cusna are released. This file is located in:\
     \
     `%{idp.home}/conf/attribute-filter.xml`&#x20;
 
     \
-    Add the following filter policy to the file:\
-
+    Add the following filter policy to the file:<br>
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>

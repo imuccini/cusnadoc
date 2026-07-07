@@ -51,8 +51,7 @@ For example, in Cambium you might want to use the same WLAN profile for all the 
 1. Form your Optix account go to **Apps and Integrations** and click on the tab **DEVELOP**.
 2. Click **Create App** and enter a name for your app, such as "_Cusna_". The Edit your app dialog appears. Fill in the optional missing data such as category logo and description.
 3.  In the **API Keys** section copy the **Client ID** and the **Organization Token**\
-    \
-
+    <br>
 
     <figure><img src="../../.gitbook/assets/image (145).png" alt=""><figcaption></figcaption></figure>
 4. In the **Advanced settings** section, enter the following code
@@ -84,8 +83,7 @@ Take note of of your Optix account **subdomain**. The subdomain is the string ju
 
 1. In your Cusna account, go to **Setting** and scroll to the **Integrations** section. Click **New Integration**. Select **Optix**.
 2.  Enter your Optix **Client ID**, **Organization Token** and **Subdomain**  and finally click **Setup**.\
-    \
-
+    <br>
 
     <figure><img src="../../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 

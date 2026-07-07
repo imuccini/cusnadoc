@@ -22,8 +22,7 @@ Select **Cloud MyPSK Users** in the select menu.
 
 ![](<../../.gitbook/assets/image (133).png>)
 
-Once you have the SSID properly configured, you can deploy it on your access points.\
-
+Once you have the SSID properly configured, you can deploy it on your access points.<br>
 
 {% hint style="warning" %}
 Cusna implements an automatic VLAN management to segregate each resident traffic. Cusna uses the slot of VLANs 2000-4000 so you should avoid using these VLANs for any other purposes.

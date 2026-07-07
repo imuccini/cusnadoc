@@ -19,8 +19,7 @@ You can upload you organization **Logo**, and it will be used to&#x20;
 * personalized the Cusna dashboard
 * as default logo in the WiFi Portal if no other logo has been uploaded on the specific Network the portal refers to
 
-The **Accent color** will be used as default value to personalized the WiFi Portal in case there it is not configured at the Network level.\
-
+The **Accent color** will be used as default value to personalized the WiFi Portal in case there it is not configured at the Network level.<br>
 
 
 

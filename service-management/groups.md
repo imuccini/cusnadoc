@@ -61,7 +61,7 @@ See an example below:
 
 ## Global Groups
 
-In some cases, Groups are created without being associated to a specific Network. This happens when Groups are created automatically as part of a self-onboarding integrated with an external Identity Providers and [Roaming](broken-reference) is also enabled. The Group, for example, may relate to a team whose members needs to be able to access the network in different Networks. In this case, the Group is not assigned to a specific Network.
+In some cases, Groups are created without being associated to a specific Network. This happens when Groups are created automatically as part of a self-onboarding integrated with an external Identity Providers and [Roaming](/broken/pages/G4PYJJRGHErTtwYYagmi) is also enabled. The Group, for example, may relate to a team whose members needs to be able to access the network in different Networks. In this case, the Group is not assigned to a specific Network.
 
 
 
@@ -73,7 +73,7 @@ When you create a group you have to enter the following inputs:
 
 * **Network**: Groups are valid at the Network level. This setting is optional, if you leave empty the group becomes a [Global Group](groups.md#global-groups)
 * **Reference name**
-* **VLAN** (optional): if you chose to set the VLAN manually, a dropdown menu shows the list of VLANs not already in use by other accounts in the same Network (or in the entire Organization if you are working with [Roaming](broken-reference) mode active). If you select **Auto**, the VLAN will be assigned automatically to the group.
+* **VLAN** (optional): if you chose to set the VLAN manually, a dropdown menu shows the list of VLANs not already in use by other accounts in the same Network (or in the entire Organization if you are working with [Roaming](/broken/pages/G4PYJJRGHErTtwYYagmi) mode active). If you select **Auto**, the VLAN will be assigned automatically to the group.
 
 
 

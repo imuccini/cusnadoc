@@ -1,7 +1,6 @@
 # WiFi Portal options
 
-Open the **Setup** menu group and select **Onboarding**. In the **WiFi Portal** section, you can find some options regarding the default behavior of the WiFi Portal across all your Networks.\
-
+Open the **Setup** menu group and select **Onboarding**. In the **WiFi Portal** section, you can find some options regarding the default behavior of the WiFi Portal across all your Networks.<br>
 
 ***
 
