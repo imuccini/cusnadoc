@@ -34,9 +34,9 @@ Next, the **PAN Assignment Policy** allows to set a rule to define which PAN ass
 
 * **Unique per Account**: the default option assign a unique PAN to each Account
 * **Inherit form Group**: with the option, if the Account is assigned to a Group, and the group has a VLAN or L3 segmentation attribute assigned, the Account inherits the PAN form the Group.\
-  &#xNAN;_&#x49;f the Group has not VLAN or L3 tag, the Account get assigned with a unique PAN._
+  _&#x49;f the Group has not VLAN or L3 tag, the Account get assigned with a unique PAN._
 * **Inherit form Unit**: If the "[Unit](personal-area-networks-pan.md#units)" option is enabled, you can assign a PAN to an Account based on the PAN cofnigure on the Unit assigned to the Account.\
-  &#xNAN;_&#x49;f the Account is not assigned to any Unit or the Unit does not have a PAN configured, a unique PAN is assigned to the Account._&#x20;
+  _&#x49;f the Account is not assigned to any Unit or the Unit does not have a PAN configured, a unique PAN is assigned to the Account._&#x20;
 
 ### **Free up VLANs upon service termination**
 

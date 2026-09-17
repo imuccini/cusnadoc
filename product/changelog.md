@@ -2,7 +2,7 @@
 
 **12/10/2024**
 
-* For Meraki networks, you can now inspect the name of the Group Policies initialized in the Meraki organization for each Network Policy ([more](../service-management/network-policies.md#troubleshooting-network-policies))
+* For Meraki networks, you can now inspect the name of the Group Policies initialized in the Meraki organization for each Network Policy ([more](../service-management/wifi-service-options/network-policies.md#troubleshooting-network-policies))
 
 **12/02/2024**
 
@@ -11,21 +11,21 @@
 
 **11/26/2024**
 
-* Enables sending an email to tenants a configurable number of days before their service is scheduled for termination ([more](../service-management/general-options/service-options.md#service-termination-notice))
+* Enables sending an email to tenants a configurable number of days before their service is scheduled for termination ([more](../service-management/wifi-service-options/service-lifecycle.md#service-termination-notice))
 * Data retention configuration allows to automatically delete accounts and related PII after a certain number of days since their last service termination date ([more](../service-management/account-settings.md#account-management))
 
 **11/25/2024**
 
-* Admins can now define a custom set of characters for automatically generating WiFi passphrases. The default character set is optimized to exclude easily confusable characters ([more](../service-management/general-options/service-options.md#passphrase-options))
+* Admins can now define a custom set of characters for automatically generating WiFi passphrases. The default character set is optimized to exclude easily confusable characters ([more](../service-management/wifi-service-options/service-lifecycle.md#passphrase-options))
 
 **11/25/2024**
 
-* Resident can now select their unit in the registration form during first time onboarding ([more](../service-management/wifi-portal-and-onboarding/access-control-options.md#account-registration))
-* Phone number validation via SMS OTP during onboarding. Requires [configuration of a Twilio Verify](../add-ons/sms-services-via-twilio.md) account. Contact support to request the activation of this feature. ([more](../service-management/wifi-portal-and-onboarding/access-control-options.md#account-registration))
+* Resident can now select their unit in the registration form during first time onboarding ([more](../service-management/onboarding/authentication.md#account-registration))
+* Phone number validation via SMS OTP during onboarding. Requires [configuration of a Twilio Verify](../add-ons/sms-services-via-twilio.md) account. Contact support to request the activation of this feature. ([more](../service-management/onboarding/authentication.md#account-registration))
 
 **11/22/2024**
 
-* Automatic Service Suspension option allows to define criteria to automatically suspend the Account's service ([more](../service-management/wifi-portal-and-onboarding/access-control-options.md#automatic-service-suspension))
+* Automatic Service Suspension option allows to define criteria to automatically suspend the Account's service ([more](../service-management/onboarding/authentication.md#automatic-service-suspension))
 
 **11/21/2024**
 
@@ -72,11 +72,11 @@
 
 **10/18/2024**
 
-* Admins can now set the [length of the WiFi passphrases](../service-management/general-options/service-options.md#passphrase-length) automatically generated
+* Admins can now set the [length of the WiFi passphrases](../service-management/wifi-service-options/service-lifecycle.md#passphrase-length) automatically generated
 
 **10/17/2024**
 
-* The utility for publishing a [WiFi Portal on a Meraki SSID](../service-management/wifi-portal-and-onboarding/wifi-portal-distribution.md) now prevents the selection of SSIDs that are already in use for iPSK services
+* The utility for publishing a [WiFi Portal on a Meraki SSID](../service-management/onboarding/wifi-portal-distribution.md) now prevents the selection of SSIDs that are already in use for iPSK services
 * New Locations can no longer be associated with Meraki networks that are already linked to other Locations within the same Organization&#x20;
 
 **10/16/2024**
@@ -98,7 +98,7 @@
 
 **09/18/2024**
 
-* The General options page under the Setup menu group has been exploded in two independent pages, [Onboarding](../service-management/wifi-portal-and-onboarding/#wifi-portal-options) and [General](../service-management/general-options/) to simplify usability
+* The General options page under the Setup menu group has been exploded in two independent pages, [Onboarding](../service-management/onboarding/#wifi-portal-options) and [General](../service-management/wifi-service-options/) to simplify usability
 
 **09/17/2024**
 

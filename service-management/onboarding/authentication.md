@@ -1,4 +1,4 @@
-# Access Control options
+# Authentication
 
 Open the **Setup** menu group and select **Onboarding**. In the **Access Control** section, you can find all the options to control the way users can signup and login into the service via [WiFi Portal](./).
 
@@ -57,22 +57,3 @@ If you do not see this option in your account, contact us to enable it.
 
 <figure><img src="../../.gitbook/assets/image (297).png" alt=""><figcaption></figcaption></figure>
 
-
-
-### Passpoint
-
-This option allow users to download a Passpoint profile on their compatible devices form the WiFi Portal. The Passpoint profile will autonomically connect provisioned devices to a dedicated SSID that must be properly configured.
-
-{% hint style="info" %}
-If you do not see this option in your account, contact us to enable it.
-{% endhint %}
-
-<figure><img src="../../.gitbook/assets/image (298).png" alt=""><figcaption></figcaption></figure>
-
-### Automatic service suspension
-
-This option allows you to define criteria for automatically suspending an account's service. Multiple options may be available, including:
-
-* **Max active period**: In this case, you specify the maximum duration (in days) that an account remains active after activation.
-
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>

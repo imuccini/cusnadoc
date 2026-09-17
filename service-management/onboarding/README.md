@@ -1,4 +1,4 @@
-# WiFi Portal & Onboarding
+# Onboarding
 
 Residents can self-enroll in the service on the WiFi Portal.
 
@@ -39,8 +39,8 @@ Residents might receive an Activation Email with the link to the WiFi Portal, si
 
 When they visit the **WiFi Portal page**, they might have multiple options to identify themselves:
 
-* Passwrodless login (must be [enabled in the Access Control options](access-control-options.md#passwordless-login))
-* SSO authentication with an Identity Provider (must be [enabled in the Access Control options](access-control-options.md#identity-provider-options))
+* Passwrodless login (must be [enabled in the Access Control options](authentication.md#passwordless-login))
+* SSO authentication with an Identity Provider (must be [enabled in the Access Control options](authentication.md#identity-provider-options))
 
 #### Passwrodless login
 
@@ -56,13 +56,13 @@ By clicking the Login button, the user lands directly in the WiFi Portal already
 
 #### SSO authentication
 
-In case an integration with a cloud IdP has been enabled in the [Access Control options](access-control-options.md#identity-provider-options), the user has the option to select this method. The user is redirected to the external identification page of the IdP and upon successful identification till return to the WiFi Portal to continue the onboarding process.
+In case an integration with a cloud IdP has been enabled in the [Access Control options](authentication.md#identity-provider-options), the user has the option to select this method. The user is redirected to the external identification page of the IdP and upon successful identification till return to the WiFi Portal to continue the onboarding process.
 
 
 
 ### First access
 
-On the first access to the portal, users are invited to accept the [T\&C](../general-options/organization-details.md) and other personal attributes as configured in the [Access Control](access-control-options.md#contact-profile-collection) options (such as first name, last name, company).
+On the first access to the portal, users are invited to accept the [T\&C](../organization-settings/organization-details.md) and other personal attributes as configured in the [Access Control](authentication.md#contact-profile-collection) options (such as first name, last name, company).
 
 <figure><img src="../../.gitbook/assets/image (252).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -80,9 +80,9 @@ The home page contains different panels that might be visible or not depending o
   * re-generate the passphrase (if enabled as option in the [WiFi Portal settings](wifi-portal-options.md#allow-users-to-re-generate-their-wifi-passphrase)),&#x20;
   * view a QR code that can be scanned to connect directly to the network
   * and copy the passphrase to the device clipboard
-* [**Passpoint**](access-control-options.md#passpoint)**:** if Passpoint is enabled and the portal is opened on an Passpoint compatible device, this panel offer the option to directly download a Passpoint profile that works on the same secure WiFi network
+* [**Passpoint**](authentication.md#passpoint)**:** if Passpoint is enabled and the portal is opened on an Passpoint compatible device, this panel offer the option to directly download a Passpoint profile that works on the same secure WiFi network
 * [**Guest WiFi**](wifi-portal-options.md#allow-users-to-create-a-wifi-passphrase-for-guests): if enabled in the general options, the user can enable a dedicated passphrase that can be provided to guests
-* [**Your Devices**](access-control-options.md#allow-users-to-register-legacy-devices): if enabled, allows users to manually provision devices via their MAC address
+* [**Your Devices**](authentication.md#allow-users-to-register-legacy-devices): if enabled, allows users to manually provision devices via their MAC address
 
 
 

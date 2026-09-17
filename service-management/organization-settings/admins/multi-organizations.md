@@ -8,5 +8,5 @@ When a admin is assigned to an Organization, the user can simply pick to organiz
 
 
 
-![](<../../.gitbook/assets/multi manager.gif>)
+![](<../../../.gitbook/assets/multi manager.gif>)
 

@@ -4,7 +4,7 @@ Get started with your Cusna account a few steps:
 
 1. [Prepare your WiFi network](https://app.gitbook.com/s/DvdioCJduzKTpzAv3Sij/wifi-integration)
 2. [Connect your Cusna account](https://app.gitbook.com/s/DvdioCJduzKTpzAv3Sij/wifi-integration) to the WiFi management system
-3. Setup your general service options, such as VLAN assignment mode and [WiFi Portal](service-management/wifi-portal-and-onboarding/wifi-portal-options.md) capabilities in the [General](service-management/general-options/) options
+3. Setup your general service options, such as VLAN assignment mode and [WiFi Portal](service-management/onboarding/wifi-portal-options.md) capabilities in the [General](service-management/wifi-service-options/) options
 4. Create [Networks](service-management/managing-networks/)
 5. [Provision accounts](service-management/managing-accounts.md)
 

@@ -48,7 +48,7 @@ Whenever you set a passphrase manually, before being able to create the Account 
 
 
 
-Assign a **VLAN**. If you selected the option to manually assign VLANs in the [General settings](general-options/), you'll see a dropdown where you can pick a VLAN that has not been assigned to other accounts yet.
+Assign a **VLAN**. If you selected the option to manually assign VLANs in the [General settings](wifi-service-options/), you'll see a dropdown where you can pick a VLAN that has not been assigned to other accounts yet.
 
 ![](<../.gitbook/assets/image (105).png>)
 
@@ -57,7 +57,7 @@ Assign a **VLAN**. If you selected the option to manually assign VLANs in the [G
 Enter the **Account Details.** The list depends on the Type of account your are creating and might include:
 
 * Unit (optional)
-* Port (optional - if Unit has been assigned the the [Port Management option](general-options/service-options.md#units) is enabled)
+* Port (optional - if Unit has been assigned the the [Port Management option](wifi-service-options/service-lifecycle.md#units) is enabled)
 * Building (optional)
 * First name (or Reference name in case of Spaces and IoT devices)
 * Last name
@@ -67,7 +67,7 @@ Enter the **Account Details.** The list depends on the Type of account your are 
 
 
 
-For some vendors, you might have the option to manually assign a [Network Policy](network-policies.md) to the Account. You can either chose to assign the Default network policy assigned to this Network or select one manually among those that have been already provisioned.
+For some vendors, you might have the option to manually assign a [Network Policy](wifi-service-options/network-policies.md) to the Account. You can either chose to assign the Default network policy assigned to this Network or select one manually among those that have been already provisioned.
 
 <figure><img src="../.gitbook/assets/image (276).png" alt="" width="375"><figcaption></figcaption></figure>
 

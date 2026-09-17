@@ -29,7 +29,7 @@ Each **Location** in Cusna is associated to a **Network** in the Meraki dashboar
     \
     ![](<../../../.gitbook/assets/image (208).png>)\
     \
-    &#xNAN;_&#x4E;ote: The "Enabled/Disabled WPN" option is only displayed when at least one iPS group is configured._
+    _&#x4E;ote: The "Enabled/Disabled WPN" option is only displayed when at least one iPS group is configured._
 
 
 7. Click **Save changes** on the bottom of the page.
@@ -42,7 +42,7 @@ Each **Location** in Cusna is associated to a **Network** in the Meraki dashboar
 
 <summary>IoT SSID - optional</summary>
 
-If you need to support [IoT Devices Authentication](../../../service-management/wifi-portal-and-onboarding/iot-devices-authentication.md) via MAC authentication, you need to add an additional dedicated SSID in each of the Networks configured for the service.
+If you need to support [IoT Devices Authentication](../../../service-management/onboarding/iot-devices-authentication.md) via MAC authentication, you need to add an additional dedicated SSID in each of the Networks configured for the service.
 
 1. Navigate to **Wireless** > **Configure** > **SSIDs**, enable an SSID from the list and rename it with your desired network name, e.g. "_IoT Devices_". Click **Save Changes** at the bottom of the page.
 2. On the above SSID, click "**edit settings**" link to navigate to the **Access Control** page for this SSID.
@@ -85,8 +85,8 @@ Once the key is generated from the Cisco Meraki dashboard:
 
 Next, you need to setup at least one **Network Policy**.  Once you have set up the Meraki integration, the **Network Policy** section appears.
 
-{% content-ref url="../../../service-management/network-policies.md" %}
-[network-policies.md](../../../service-management/network-policies.md)
+{% content-ref url="../../../service-management/wifi-service-options/network-policies.md" %}
+[network-policies.md](../../../service-management/wifi-service-options/network-policies.md)
 {% endcontent-ref %}
 
 

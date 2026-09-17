@@ -62,3 +62,16 @@ The **Data Retention option**, allows to automatically delete accounts (a relate
 {% hint style="info" %}
 A daily routine checks for all Accounts that match the data retention settings and deletes them. If you set the number of days to 0, only Accounts that have been terminated before the daily data retention routine runs are deleted, otherwise they are deleted the following day.
 {% endhint %}
+
+
+
+### Units
+
+This options allows to enable or disable [Unit](units.md) management on the account. This option is available only for WiFi vendors that support Unit based assignment of Access Points
+
+<figure><img src="../.gitbook/assets/image (309).png" alt=""><figcaption></figcaption></figure>
+
+For supported vendors only, you may also have the option to enable the ability to asign different ports of the same Access Point in the Unit to different Accounts. To enable this capability you need to turn on the option **Assign individual ETH Ports to Accounts**.
+
+<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+

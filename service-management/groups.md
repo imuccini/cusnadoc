@@ -95,7 +95,7 @@ The **Automatic Account Suspension** dropdown allows you to choose options for a
 
 
 {% hint style="info" %}
-In cases where suspension policies are set at both the Group and the global levels ([Service Options](general-options/service-options.md)), the policies configured at the Group level override and
+In cases where suspension policies are set at both the Group and the global levels ([Service Options](wifi-service-options/service-lifecycle.md)), the policies configured at the Group level override and
 {% endhint %}
 
 

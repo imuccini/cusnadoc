@@ -33,7 +33,7 @@ Adding a devices only requires to specify
 
 ### Setup
 
-You can enable manual IoT device provisioning form the [WiFi Portal options](access-control-options.md#allow-users-to-register-legacy-devices) , enabling the toggle for the option "**Allow users register headless devices**"
+You can enable manual IoT device provisioning form the [WiFi Portal options](authentication.md#allow-users-to-register-legacy-devices) , enabling the toggle for the option "**Allow users register headless devices**"
 
 In order to allow devices to authenticate via MAC authentication, you need to create a dedicated SSID (for example named "_IoT devices_") and configure it to support MAC authentication. RADIUS server parameters and vendor-specifc instruction are provided on demand by our support team.
 

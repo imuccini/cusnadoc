@@ -40,7 +40,7 @@ You'll have to come back to this page once you have integrated Cusna with your M
 
 <summary>IoT SSID - optional</summary>
 
-If you need to support [IoT Devices Authentication](../../service-management/wifi-portal-and-onboarding/iot-devices-authentication.md) via MAC authentication, you need to add an additional dedicated SSID in each of the Networks configured for the service.
+If you need to support [IoT Devices Authentication](../../service-management/onboarding/iot-devices-authentication.md) via MAC authentication, you need to add an additional dedicated SSID in each of the Networks configured for the service.
 
 1. Navigate to **Wireless** > **Configure** > **SSIDs**, enable an SSID from the list and rename it with your desired network name, e.g. "_IoT Devices_". Click **Save Changes** at the bottom of the page.
 2. On the above SSID, click "**edit settings**" link to navigate to the **Access Control** page for this SSID.
@@ -95,8 +95,8 @@ Configure RADIUS server in the Meraki dashboard.
 
 Next, you need to setup at least one **Network Policy**.  Once you have set up the Meraki integration, the **Network Policy** section appears.
 
-{% content-ref url="../../service-management/network-policies.md" %}
-[network-policies.md](../../service-management/network-policies.md)
+{% content-ref url="../../service-management/wifi-service-options/network-policies.md" %}
+[network-policies.md](../../service-management/wifi-service-options/network-policies.md)
 {% endcontent-ref %}
 
 
@@ -122,7 +122,7 @@ However, when the student connects their wireless devices to other networks on c
 
 Wired devices can be onboarded in two different ways.
 
-Headless devices must be manually provisioned by the user on their [WiFi portal](../../service-management/wifi-portal-and-onboarding/iot-devices-authentication.md), adding their MAC address and reference friendly name.
+Headless devices must be manually provisioned by the user on their [WiFi portal](../../service-management/onboarding/iot-devices-authentication.md), adding their MAC address and reference friendly name.
 
 Non-headless devices, once connected to the ETH port, can be blocked and prompted to a captive portal to enroll the device.
 
