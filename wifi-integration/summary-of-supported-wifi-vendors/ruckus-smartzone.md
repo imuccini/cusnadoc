@@ -1,5 +1,9 @@
 # Ruckus SmartZone
 
+{% hint style="warning" %}
+We are sunsetting the traditional SmartZone local DPSK integration in favor of the more modern, RADIUS-based DPSK3. For updates on the release date, please contact our Product team.
+{% endhint %}
+
 Ruckus SmartZone integration is based on the DPSK  and relies on VLANs to differentiate resident Personal Area Networks.
 
 
